@@ -1,0 +1,7 @@
+C:\Users\MTCL\Documents\POLGO_Rod\cspe\prelim\prelim\bin\Debug\prelim.exe.config
+C:\Users\MTCL\Documents\POLGO_Rod\cspe\prelim\prelim\bin\Debug\prelim.exe
+C:\Users\MTCL\Documents\POLGO_Rod\cspe\prelim\prelim\bin\Debug\prelim.pdb
+C:\Users\MTCL\Documents\POLGO_Rod\cspe\prelim\prelim\obj\Debug\prelim.csproj.AssemblyReference.cache
+C:\Users\MTCL\Documents\POLGO_Rod\cspe\prelim\prelim\obj\Debug\prelim.csproj.CoreCompileInputs.cache
+C:\Users\MTCL\Documents\POLGO_Rod\cspe\prelim\prelim\obj\Debug\prelim.exe
+C:\Users\MTCL\Documents\POLGO_Rod\cspe\prelim\prelim\obj\Debug\prelim.pdb
