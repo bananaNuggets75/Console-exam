@@ -1,0 +1,15 @@
+/Users/banananuggets/Projects/prelim/prelim/bin/Debug/net7.0/prelim
+/Users/banananuggets/Projects/prelim/prelim/bin/Debug/net7.0/prelim.deps.json
+/Users/banananuggets/Projects/prelim/prelim/bin/Debug/net7.0/prelim.runtimeconfig.json
+/Users/banananuggets/Projects/prelim/prelim/bin/Debug/net7.0/prelim.dll
+/Users/banananuggets/Projects/prelim/prelim/bin/Debug/net7.0/prelim.pdb
+/Users/banananuggets/Projects/prelim/prelim/obj/Debug/net7.0/prelim.csproj.AssemblyReference.cache
+/Users/banananuggets/Projects/prelim/prelim/obj/Debug/net7.0/prelim.GeneratedMSBuildEditorConfig.editorconfig
+/Users/banananuggets/Projects/prelim/prelim/obj/Debug/net7.0/prelim.AssemblyInfoInputs.cache
+/Users/banananuggets/Projects/prelim/prelim/obj/Debug/net7.0/prelim.AssemblyInfo.cs
+/Users/banananuggets/Projects/prelim/prelim/obj/Debug/net7.0/prelim.csproj.CoreCompileInputs.cache
+/Users/banananuggets/Projects/prelim/prelim/obj/Debug/net7.0/prelim.dll
+/Users/banananuggets/Projects/prelim/prelim/obj/Debug/net7.0/refint/prelim.dll
+/Users/banananuggets/Projects/prelim/prelim/obj/Debug/net7.0/prelim.pdb
+/Users/banananuggets/Projects/prelim/prelim/obj/Debug/net7.0/prelim.genruntimeconfig.cache
+/Users/banananuggets/Projects/prelim/prelim/obj/Debug/net7.0/ref/prelim.dll
