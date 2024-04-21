@@ -1,0 +1,7 @@
+C:\Users\ccs\Documents\POLGO_CSPE\CSPE2100_MidtermP1_Polgo\CSPE2100_MidtermP1_Polgo\bin\Debug\CSPE2100_MidtermP1_Polgo.exe.config
+C:\Users\ccs\Documents\POLGO_CSPE\CSPE2100_MidtermP1_Polgo\CSPE2100_MidtermP1_Polgo\bin\Debug\CSPE2100_MidtermP1_Polgo.exe
+C:\Users\ccs\Documents\POLGO_CSPE\CSPE2100_MidtermP1_Polgo\CSPE2100_MidtermP1_Polgo\bin\Debug\CSPE2100_MidtermP1_Polgo.pdb
+C:\Users\ccs\Documents\POLGO_CSPE\CSPE2100_MidtermP1_Polgo\CSPE2100_MidtermP1_Polgo\obj\Debug\CSPE2100_MidtermP1_Polgo.csproj.AssemblyReference.cache
+C:\Users\ccs\Documents\POLGO_CSPE\CSPE2100_MidtermP1_Polgo\CSPE2100_MidtermP1_Polgo\obj\Debug\CSPE2100_MidtermP1_Polgo.csproj.CoreCompileInputs.cache
+C:\Users\ccs\Documents\POLGO_CSPE\CSPE2100_MidtermP1_Polgo\CSPE2100_MidtermP1_Polgo\obj\Debug\CSPE2100_MidtermP1_Polgo.exe
+C:\Users\ccs\Documents\POLGO_CSPE\CSPE2100_MidtermP1_Polgo\CSPE2100_MidtermP1_Polgo\obj\Debug\CSPE2100_MidtermP1_Polgo.pdb

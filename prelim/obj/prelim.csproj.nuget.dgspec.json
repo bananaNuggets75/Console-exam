@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/banananuggets/Projects/prelim/prelim/prelim.csproj": {}
+    "/Users/banananuggets/Projects/prelim/Console-exam/prelim/prelim.csproj": {}
   },
   "projects": {
-    "/Users/banananuggets/Projects/prelim/prelim/prelim.csproj": {
+    "/Users/banananuggets/Projects/prelim/Console-exam/prelim/prelim.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/banananuggets/Projects/prelim/prelim/prelim.csproj",
+        "projectUniqueName": "/Users/banananuggets/Projects/prelim/Console-exam/prelim/prelim.csproj",
         "projectName": "prelim",
-        "projectPath": "/Users/banananuggets/Projects/prelim/prelim/prelim.csproj",
+        "projectPath": "/Users/banananuggets/Projects/prelim/Console-exam/prelim/prelim.csproj",
         "packagesPath": "/Users/banananuggets/.nuget/packages/",
-        "outputPath": "/Users/banananuggets/Projects/prelim/prelim/obj/",
+        "outputPath": "/Users/banananuggets/Projects/prelim/Console-exam/prelim/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/banananuggets/.nuget/NuGet/NuGet.Config"
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.315/RuntimeIdentifierGraph.json"
         }
       }
     }
