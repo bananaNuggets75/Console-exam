@@ -5,11 +5,10 @@ Welcome to the C# Exams repository! This repository is dedicated to storing reso
 ### Contents
 
 - Preliminary Exam - POS Prototype:
-Contains materials related to the preliminary exam, which focused on developing a Point of Sale (POS) prototype using console programming.
+  Contains materials related to the preliminary exam, which focused on developing a Point of Sale (POS) prototype using console programming.
 
 - Midterm Exam - Areas of Polygon:
-Provides resources for the midterm exam, which covered the calculation of areas of polygons using `Polymorphism` and console programming.
-
+  Provides resources for the midterm exam, which covered the calculation of areas of polygons using `Polymorphism` and console programming.
 
 ### Contribution Guidelines
 
@@ -19,3 +18,7 @@ Contributions to this repository are greatly appreciated. If you'd like to contr
 - Organize your contributions into appropriate folders and follow a consistent naming convention.
 - Make sure your contributions comply with any licensing requirements.
 
+### Clone the Repository
+```bash
+git clone https://github.com/bananaNuggets75/console-game.git
+```
