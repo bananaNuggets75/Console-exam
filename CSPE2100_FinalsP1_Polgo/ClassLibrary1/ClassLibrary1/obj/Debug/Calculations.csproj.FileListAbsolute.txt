@@ -1,0 +1,6 @@
+C:\Users\ccs\Documents\POLGO_CSPE\CSPE2100_FinalsP1_Polgo\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\ccs\Documents\POLGO_CSPE\CSPE2100_FinalsP1_Polgo\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\ccs\Documents\POLGO_CSPE\CSPE2100_FinalsP1_Polgo\ClassLibrary1\ClassLibrary1\obj\Debug\Calculations.csproj.AssemblyReference.cache
+C:\Users\ccs\Documents\POLGO_CSPE\CSPE2100_FinalsP1_Polgo\ClassLibrary1\ClassLibrary1\obj\Debug\Calculations.csproj.CoreCompileInputs.cache
+C:\Users\ccs\Documents\POLGO_CSPE\CSPE2100_FinalsP1_Polgo\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\ccs\Documents\POLGO_CSPE\CSPE2100_FinalsP1_Polgo\ClassLibrary1\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

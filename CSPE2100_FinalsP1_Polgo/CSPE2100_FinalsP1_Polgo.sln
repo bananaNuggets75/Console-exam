@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSPE2100_FinalsP1_Polgo", "CSPE2100_FinalsP1_Polgo\CSPE2100_FinalsP1_Polgo.csproj", "{CF59F15D-20D8-4315-B63B-419C752C41CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF59F15D-20D8-4315-B63B-419C752C41CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF59F15D-20D8-4315-B63B-419C752C41CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF59F15D-20D8-4315-B63B-419C752C41CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF59F15D-20D8-4315-B63B-419C752C41CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97E5746B-A892-4953-BDF6-2BB2EE9F802C}
+	EndGlobalSection
+EndGlobal
