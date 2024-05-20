@@ -30,8 +30,8 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btnCustomerClear = new System.Windows.Forms.Button();
-            this.btnCustEdit = new System.Windows.Forms.Button();
+            this.btnCustClear = new System.Windows.Forms.Button();
+            this.btnCustSave = new System.Windows.Forms.Button();
             this.btnCustAdd = new System.Windows.Forms.Button();
             this.lblCustAddress = new System.Windows.Forms.Label();
             this.lblCustMname = new System.Windows.Forms.Label();
@@ -43,15 +43,15 @@
             this.txtCustFName = new System.Windows.Forms.TextBox();
             this.txtCustLName = new System.Windows.Forms.TextBox();
             this.txtCustID = new System.Windows.Forms.TextBox();
-            this.dataGridCustomers = new System.Windows.Forms.DataGridView();
+            this.dataCustomers = new System.Windows.Forms.DataGridView();
             this.custID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.custLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.custFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.custMiddleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.custAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnGymClassClear = new System.Windows.Forms.Button();
-            this.btnGymEdit = new System.Windows.Forms.Button();
+            this.btnGymClear = new System.Windows.Forms.Button();
+            this.btnGymSave = new System.Windows.Forms.Button();
             this.btnGymAdd = new System.Windows.Forms.Button();
             this.txtGymMFee = new System.Windows.Forms.TextBox();
             this.txtGymInsName = new System.Windows.Forms.TextBox();
@@ -61,47 +61,61 @@
             this.lblGymInsName = new System.Windows.Forms.Label();
             this.lblGymClassName = new System.Windows.Forms.Label();
             this.lblGymClassID = new System.Windows.Forms.Label();
-            this.dataGridGymClass = new System.Windows.Forms.DataGridView();
+            this.dataGymClass = new System.Windows.Forms.DataGridView();
             this.classID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.className = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.instructorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.monthlyFee = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dataEnrollGymClass = new System.Windows.Forms.DataGridView();
+            this.txtEnrollClassID = new System.Windows.Forms.TextBox();
+            this.txtEnrollCustID = new System.Windows.Forms.TextBox();
+            this.dataEnrollCust = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataEnrollCust = new System.Windows.Forms.DataGridView();
+            this.dataEnrollGym = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEnroll = new System.Windows.Forms.Button();
-            this.txtEnrollCust = new System.Windows.Forms.TextBox();
+            this.txtEnrollCustName = new System.Windows.Forms.TextBox();
             this.lblEnrollCust = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblEnrollClass = new System.Windows.Forms.Label();
             this.txtEnrollLength = new System.Windows.Forms.TextBox();
-            this.txtEnrollClass = new System.Windows.Forms.TextBox();
-            this.txtEnrollDateTime = new System.Windows.Forms.TextBox();
-            this.lblEnrollDateTime = new System.Windows.Forms.Label();
+            this.txtEnrollClassName = new System.Windows.Forms.TextBox();
             this.btnEnrollCancel = new System.Windows.Forms.Button();
             this.dataEnrollment = new System.Windows.Forms.DataGridView();
+            this.enrollmentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.classesId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lengthEnrollment = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.enrollment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.dataCustInfo1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataCustInfo = new System.Windows.Forms.DataGridView();
+            this.customerID2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridCustomers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCustomers)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridGymClass)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGymClass)).BeginInit();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataEnrollGymClass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataEnrollCust)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataEnrollGym)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataEnrollment)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCustInfo1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCustInfo)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -109,16 +123,17 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(12, 36);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1123, 567);
+            this.tabControl1.Size = new System.Drawing.Size(1296, 554);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.btnCustomerClear);
-            this.tabPage1.Controls.Add(this.btnCustEdit);
+            this.tabPage1.Controls.Add(this.btnCustClear);
+            this.tabPage1.Controls.Add(this.btnCustSave);
             this.tabPage1.Controls.Add(this.btnCustAdd);
             this.tabPage1.Controls.Add(this.lblCustAddress);
             this.tabPage1.Controls.Add(this.lblCustMname);
@@ -130,34 +145,34 @@
             this.tabPage1.Controls.Add(this.txtCustFName);
             this.tabPage1.Controls.Add(this.txtCustLName);
             this.tabPage1.Controls.Add(this.txtCustID);
-            this.tabPage1.Controls.Add(this.dataGridCustomers);
+            this.tabPage1.Controls.Add(this.dataCustomers);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1115, 541);
+            this.tabPage1.Size = new System.Drawing.Size(1288, 528);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Customer";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // btnCustomerClear
+            // btnCustClear
             // 
-            this.btnCustomerClear.Location = new System.Drawing.Point(40, 328);
-            this.btnCustomerClear.Name = "btnCustomerClear";
-            this.btnCustomerClear.Size = new System.Drawing.Size(75, 23);
-            this.btnCustomerClear.TabIndex = 13;
-            this.btnCustomerClear.Text = "CLEAR";
-            this.btnCustomerClear.UseVisualStyleBackColor = true;
-            this.btnCustomerClear.Click += new System.EventHandler(this.btnCustomerClear_Click);
+            this.btnCustClear.Location = new System.Drawing.Point(40, 328);
+            this.btnCustClear.Name = "btnCustClear";
+            this.btnCustClear.Size = new System.Drawing.Size(75, 23);
+            this.btnCustClear.TabIndex = 13;
+            this.btnCustClear.Text = "CLEAR";
+            this.btnCustClear.UseVisualStyleBackColor = true;
+            this.btnCustClear.Click += new System.EventHandler(this.btnCustomerClear_Click);
             // 
-            // btnCustEdit
+            // btnCustSave
             // 
-            this.btnCustEdit.Location = new System.Drawing.Point(40, 289);
-            this.btnCustEdit.Name = "btnCustEdit";
-            this.btnCustEdit.Size = new System.Drawing.Size(75, 23);
-            this.btnCustEdit.TabIndex = 12;
-            this.btnCustEdit.Text = "EDIT";
-            this.btnCustEdit.UseVisualStyleBackColor = true;
-            this.btnCustEdit.Click += new System.EventHandler(this.btnCustEdit_Click);
+            this.btnCustSave.Location = new System.Drawing.Point(40, 289);
+            this.btnCustSave.Name = "btnCustSave";
+            this.btnCustSave.Size = new System.Drawing.Size(75, 23);
+            this.btnCustSave.TabIndex = 12;
+            this.btnCustSave.Text = "SAVE";
+            this.btnCustSave.UseVisualStyleBackColor = true;
+            this.btnCustSave.Click += new System.EventHandler(this.btnCustSave_Click);
             // 
             // btnCustAdd
             // 
@@ -249,23 +264,23 @@
             this.txtCustID.Size = new System.Drawing.Size(100, 20);
             this.txtCustID.TabIndex = 1;
             // 
-            // dataGridCustomers
+            // dataCustomers
             // 
-            this.dataGridCustomers.AllowUserToAddRows = false;
-            this.dataGridCustomers.AllowUserToDeleteRows = false;
-            this.dataGridCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridCustomers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataCustomers.AllowUserToAddRows = false;
+            this.dataCustomers.AllowUserToDeleteRows = false;
+            this.dataCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataCustomers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.custID,
             this.custLastName,
             this.custFirstName,
             this.custMiddleName,
             this.custAddress});
-            this.dataGridCustomers.Location = new System.Drawing.Point(194, 6);
-            this.dataGridCustomers.Name = "dataGridCustomers";
-            this.dataGridCustomers.ReadOnly = true;
-            this.dataGridCustomers.Size = new System.Drawing.Size(535, 354);
-            this.dataGridCustomers.TabIndex = 0;
-            this.dataGridCustomers.SelectionChanged += new System.EventHandler(this.dataGridCustomers_SelectionChanged);
+            this.dataCustomers.Location = new System.Drawing.Point(194, 6);
+            this.dataCustomers.Name = "dataCustomers";
+            this.dataCustomers.ReadOnly = true;
+            this.dataCustomers.Size = new System.Drawing.Size(535, 354);
+            this.dataCustomers.TabIndex = 0;
+            this.dataCustomers.SelectionChanged += new System.EventHandler(this.dataCustomers_SelectionChanged);
             // 
             // custID
             // 
@@ -299,8 +314,8 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.btnGymClassClear);
-            this.tabPage2.Controls.Add(this.btnGymEdit);
+            this.tabPage2.Controls.Add(this.btnGymClear);
+            this.tabPage2.Controls.Add(this.btnGymSave);
             this.tabPage2.Controls.Add(this.btnGymAdd);
             this.tabPage2.Controls.Add(this.txtGymMFee);
             this.tabPage2.Controls.Add(this.txtGymInsName);
@@ -310,34 +325,34 @@
             this.tabPage2.Controls.Add(this.lblGymInsName);
             this.tabPage2.Controls.Add(this.lblGymClassName);
             this.tabPage2.Controls.Add(this.lblGymClassID);
-            this.tabPage2.Controls.Add(this.dataGridGymClass);
+            this.tabPage2.Controls.Add(this.dataGymClass);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1115, 541);
+            this.tabPage2.Size = new System.Drawing.Size(1288, 528);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Gym Class";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // btnGymClassClear
+            // btnGymClear
             // 
-            this.btnGymClassClear.Location = new System.Drawing.Point(48, 309);
-            this.btnGymClassClear.Name = "btnGymClassClear";
-            this.btnGymClassClear.Size = new System.Drawing.Size(75, 23);
-            this.btnGymClassClear.TabIndex = 11;
-            this.btnGymClassClear.Text = "CLEAR";
-            this.btnGymClassClear.UseVisualStyleBackColor = true;
-            this.btnGymClassClear.Click += new System.EventHandler(this.btnGymClassClear_Click);
+            this.btnGymClear.Location = new System.Drawing.Point(48, 309);
+            this.btnGymClear.Name = "btnGymClear";
+            this.btnGymClear.Size = new System.Drawing.Size(75, 23);
+            this.btnGymClear.TabIndex = 11;
+            this.btnGymClear.Text = "CLEAR";
+            this.btnGymClear.UseVisualStyleBackColor = true;
+            this.btnGymClear.Click += new System.EventHandler(this.btnGymClassClear_Click);
             // 
-            // btnGymEdit
+            // btnGymSave
             // 
-            this.btnGymEdit.Location = new System.Drawing.Point(48, 251);
-            this.btnGymEdit.Name = "btnGymEdit";
-            this.btnGymEdit.Size = new System.Drawing.Size(75, 23);
-            this.btnGymEdit.TabIndex = 10;
-            this.btnGymEdit.Text = "EDIT";
-            this.btnGymEdit.UseVisualStyleBackColor = true;
-            this.btnGymEdit.Click += new System.EventHandler(this.btnGymEdit_Click);
+            this.btnGymSave.Location = new System.Drawing.Point(48, 251);
+            this.btnGymSave.Name = "btnGymSave";
+            this.btnGymSave.Size = new System.Drawing.Size(75, 23);
+            this.btnGymSave.TabIndex = 10;
+            this.btnGymSave.Text = "SAVE";
+            this.btnGymSave.UseVisualStyleBackColor = true;
+            this.btnGymSave.Click += new System.EventHandler(this.btnGymSave_Click);
             // 
             // btnGymAdd
             // 
@@ -413,22 +428,22 @@
             this.lblGymClassID.TabIndex = 1;
             this.lblGymClassID.Text = "Class ID:";
             // 
-            // dataGridGymClass
+            // dataGymClass
             // 
-            this.dataGridGymClass.AllowUserToAddRows = false;
-            this.dataGridGymClass.AllowUserToDeleteRows = false;
-            this.dataGridGymClass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridGymClass.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGymClass.AllowUserToAddRows = false;
+            this.dataGymClass.AllowUserToDeleteRows = false;
+            this.dataGymClass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGymClass.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.classID,
             this.className,
             this.instructorName,
             this.monthlyFee});
-            this.dataGridGymClass.Location = new System.Drawing.Point(190, 19);
-            this.dataGridGymClass.Name = "dataGridGymClass";
-            this.dataGridGymClass.ReadOnly = true;
-            this.dataGridGymClass.Size = new System.Drawing.Size(536, 338);
-            this.dataGridGymClass.TabIndex = 0;
-            this.dataGridGymClass.SelectionChanged += new System.EventHandler(this.dataGridGymClass_SelectionChanged);
+            this.dataGymClass.Location = new System.Drawing.Point(720, 6);
+            this.dataGymClass.Name = "dataGymClass";
+            this.dataGymClass.ReadOnly = true;
+            this.dataGymClass.Size = new System.Drawing.Size(536, 338);
+            this.dataGymClass.TabIndex = 0;
+            this.dataGymClass.SelectionChanged += new System.EventHandler(this.dataGridGymClass_SelectionChanged);
             // 
             // classID
             // 
@@ -457,68 +472,40 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.dataEnrollGymClass);
+            this.tabPage3.Controls.Add(this.txtEnrollClassID);
+            this.tabPage3.Controls.Add(this.txtEnrollCustID);
             this.tabPage3.Controls.Add(this.dataEnrollCust);
+            this.tabPage3.Controls.Add(this.dataEnrollGym);
             this.tabPage3.Controls.Add(this.btnEnroll);
-            this.tabPage3.Controls.Add(this.txtEnrollCust);
+            this.tabPage3.Controls.Add(this.txtEnrollCustName);
             this.tabPage3.Controls.Add(this.lblEnrollCust);
             this.tabPage3.Controls.Add(this.label2);
             this.tabPage3.Controls.Add(this.lblEnrollClass);
             this.tabPage3.Controls.Add(this.txtEnrollLength);
-            this.tabPage3.Controls.Add(this.txtEnrollClass);
-            this.tabPage3.Controls.Add(this.txtEnrollDateTime);
-            this.tabPage3.Controls.Add(this.lblEnrollDateTime);
+            this.tabPage3.Controls.Add(this.txtEnrollClassName);
             this.tabPage3.Controls.Add(this.btnEnrollCancel);
             this.tabPage3.Controls.Add(this.dataEnrollment);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1115, 541);
+            this.tabPage3.Size = new System.Drawing.Size(1288, 528);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Cutomer Enrollment";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // dataEnrollGymClass
+            // txtEnrollClassID
             // 
-            this.dataEnrollGymClass.AllowUserToAddRows = false;
-            this.dataEnrollGymClass.AllowUserToDeleteRows = false;
-            this.dataEnrollGymClass.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataEnrollGymClass.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9});
-            this.dataEnrollGymClass.Location = new System.Drawing.Point(520, 198);
-            this.dataEnrollGymClass.Name = "dataEnrollGymClass";
-            this.dataEnrollGymClass.ReadOnly = true;
-            this.dataEnrollGymClass.Size = new System.Drawing.Size(578, 169);
-            this.dataEnrollGymClass.TabIndex = 12;
-            this.dataEnrollGymClass.SelectionChanged += new System.EventHandler(this.dataEnrollGymClass_SelectionChanged);
+            this.txtEnrollClassID.Location = new System.Drawing.Point(76, 50);
+            this.txtEnrollClassID.Name = "txtEnrollClassID";
+            this.txtEnrollClassID.Size = new System.Drawing.Size(100, 20);
+            this.txtEnrollClassID.TabIndex = 14;
             // 
-            // dataGridViewTextBoxColumn6
+            // txtEnrollCustID
             // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Class ID";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.HeaderText = "Class Name";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "Instructor Name";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.HeaderText = "Monthly Fee";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.txtEnrollCustID.Location = new System.Drawing.Point(149, 7);
+            this.txtEnrollCustID.Name = "txtEnrollCustID";
+            this.txtEnrollCustID.Size = new System.Drawing.Size(100, 20);
+            this.txtEnrollCustID.TabIndex = 13;
             // 
             // dataEnrollCust
             // 
@@ -526,47 +513,89 @@
             this.dataEnrollCust.AllowUserToDeleteRows = false;
             this.dataEnrollCust.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataEnrollCust.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
+            this.dataEnrollCust.Location = new System.Drawing.Point(657, 24);
+            this.dataEnrollCust.Name = "dataEnrollCust";
+            this.dataEnrollCust.ReadOnly = true;
+            this.dataEnrollCust.Size = new System.Drawing.Size(604, 191);
+            this.dataEnrollCust.TabIndex = 12;
+            this.dataEnrollCust.SelectionChanged += new System.EventHandler(this.dataEnrollCust_SelectionChanged);
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "Customer ID";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "Last Name";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.HeaderText = "First Name";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "Middle Name";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.HeaderText = "Address";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataEnrollGym
+            // 
+            this.dataEnrollGym.AllowUserToAddRows = false;
+            this.dataEnrollGym.AllowUserToDeleteRows = false;
+            this.dataEnrollGym.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataEnrollGym.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5});
-            this.dataEnrollCust.Location = new System.Drawing.Point(520, 11);
-            this.dataEnrollCust.Name = "dataEnrollCust";
-            this.dataEnrollCust.ReadOnly = true;
-            this.dataEnrollCust.Size = new System.Drawing.Size(578, 159);
-            this.dataEnrollCust.TabIndex = 11;
-            this.dataEnrollCust.SelectionChanged += new System.EventHandler(this.dataEnrollCust_SelectionChanged);
+            this.dataGridViewTextBoxColumn4});
+            this.dataEnrollGym.Location = new System.Drawing.Point(657, 221);
+            this.dataEnrollGym.Name = "dataEnrollGym";
+            this.dataEnrollGym.ReadOnly = true;
+            this.dataEnrollGym.Size = new System.Drawing.Size(604, 150);
+            this.dataEnrollGym.TabIndex = 11;
+            this.dataEnrollGym.SelectionChanged += new System.EventHandler(this.dataEnrollGym_SelectionChanged);
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Customer ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Class ID";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Last Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Class Name";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "First Name";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Instructor Name";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 150;
             // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Middle Name";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Monthly Fee";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Address";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // btnEnroll
             // 
@@ -578,12 +607,12 @@
             this.btnEnroll.UseVisualStyleBackColor = true;
             this.btnEnroll.Click += new System.EventHandler(this.btnEnroll_Click);
             // 
-            // txtEnrollCust
+            // txtEnrollCustName
             // 
-            this.txtEnrollCust.Location = new System.Drawing.Point(22, 24);
-            this.txtEnrollCust.Name = "txtEnrollCust";
-            this.txtEnrollCust.Size = new System.Drawing.Size(100, 20);
-            this.txtEnrollCust.TabIndex = 9;
+            this.txtEnrollCustName.Location = new System.Drawing.Point(22, 24);
+            this.txtEnrollCustName.Name = "txtEnrollCustName";
+            this.txtEnrollCustName.Size = new System.Drawing.Size(100, 20);
+            this.txtEnrollCustName.TabIndex = 9;
             // 
             // lblEnrollCust
             // 
@@ -608,9 +637,9 @@
             this.lblEnrollClass.AutoSize = true;
             this.lblEnrollClass.Location = new System.Drawing.Point(26, 50);
             this.lblEnrollClass.Name = "lblEnrollClass";
-            this.lblEnrollClass.Size = new System.Drawing.Size(35, 13);
+            this.lblEnrollClass.Size = new System.Drawing.Size(49, 13);
             this.lblEnrollClass.TabIndex = 6;
-            this.lblEnrollClass.Text = "Class:";
+            this.lblEnrollClass.Text = "Class ID:";
             // 
             // txtEnrollLength
             // 
@@ -619,28 +648,12 @@
             this.txtEnrollLength.Size = new System.Drawing.Size(100, 20);
             this.txtEnrollLength.TabIndex = 5;
             // 
-            // txtEnrollClass
+            // txtEnrollClassName
             // 
-            this.txtEnrollClass.Location = new System.Drawing.Point(22, 73);
-            this.txtEnrollClass.Name = "txtEnrollClass";
-            this.txtEnrollClass.Size = new System.Drawing.Size(100, 20);
-            this.txtEnrollClass.TabIndex = 4;
-            // 
-            // txtEnrollDateTime
-            // 
-            this.txtEnrollDateTime.Location = new System.Drawing.Point(22, 172);
-            this.txtEnrollDateTime.Name = "txtEnrollDateTime";
-            this.txtEnrollDateTime.Size = new System.Drawing.Size(100, 20);
-            this.txtEnrollDateTime.TabIndex = 3;
-            // 
-            // lblEnrollDateTime
-            // 
-            this.lblEnrollDateTime.AutoSize = true;
-            this.lblEnrollDateTime.Location = new System.Drawing.Point(19, 145);
-            this.lblEnrollDateTime.Name = "lblEnrollDateTime";
-            this.lblEnrollDateTime.Size = new System.Drawing.Size(77, 13);
-            this.lblEnrollDateTime.TabIndex = 2;
-            this.lblEnrollDateTime.Text = "Date and Time";
+            this.txtEnrollClassName.Location = new System.Drawing.Point(22, 73);
+            this.txtEnrollClassName.Name = "txtEnrollClassName";
+            this.txtEnrollClassName.Size = new System.Drawing.Size(100, 20);
+            this.txtEnrollClassName.TabIndex = 4;
             // 
             // btnEnrollCancel
             // 
@@ -658,15 +671,23 @@
             this.dataEnrollment.AllowUserToDeleteRows = false;
             this.dataEnrollment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataEnrollment.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.enrollmentID,
             this.customerID,
             this.classesId,
             this.lengthEnrollment,
             this.enrollment});
-            this.dataEnrollment.Location = new System.Drawing.Point(520, 389);
+            this.dataEnrollment.Location = new System.Drawing.Point(551, 377);
             this.dataEnrollment.Name = "dataEnrollment";
             this.dataEnrollment.ReadOnly = true;
-            this.dataEnrollment.Size = new System.Drawing.Size(578, 146);
+            this.dataEnrollment.Size = new System.Drawing.Size(710, 125);
             this.dataEnrollment.TabIndex = 0;
+            this.dataEnrollment.SelectionChanged += new System.EventHandler(this.dataEnrollment_SelectionChanged);
+            // 
+            // enrollmentID
+            // 
+            this.enrollmentID.HeaderText = "Enroll ID";
+            this.enrollmentID.Name = "enrollmentID";
+            this.enrollmentID.ReadOnly = true;
             // 
             // customerID
             // 
@@ -676,7 +697,7 @@
             // 
             // classesId
             // 
-            this.classesId.HeaderText = "Class";
+            this.classesId.HeaderText = "Class ID";
             this.classesId.Name = "classesId";
             this.classesId.ReadOnly = true;
             // 
@@ -694,11 +715,100 @@
             this.enrollment.ReadOnly = true;
             this.enrollment.Width = 160;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.dataCustInfo1);
+            this.tabPage4.Controls.Add(this.dataCustInfo);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1288, 528);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Classes Information";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // dataCustInfo1
+            // 
+            this.dataCustInfo1.AllowUserToAddRows = false;
+            this.dataCustInfo1.AllowUserToDeleteRows = false;
+            this.dataCustInfo1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataCustInfo1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14});
+            this.dataCustInfo1.Location = new System.Drawing.Point(563, 86);
+            this.dataCustInfo1.Name = "dataCustInfo1";
+            this.dataCustInfo1.ReadOnly = true;
+            this.dataCustInfo1.Size = new System.Drawing.Size(710, 399);
+            this.dataCustInfo1.TabIndex = 2;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.HeaderText = "Enroll ID";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.HeaderText = "Customer ID";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.HeaderText = "Class ID";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.HeaderText = "Enrollment Length";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            this.dataGridViewTextBoxColumn13.Width = 130;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.HeaderText = "Enrollment Date and Time";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            this.dataGridViewTextBoxColumn14.Width = 160;
+            // 
+            // dataCustInfo
+            // 
+            this.dataCustInfo.AllowUserToAddRows = false;
+            this.dataCustInfo.AllowUserToDeleteRows = false;
+            this.dataCustInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataCustInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.customerID2,
+            this.CustomerName});
+            this.dataCustInfo.Location = new System.Drawing.Point(43, 86);
+            this.dataCustInfo.Name = "dataCustInfo";
+            this.dataCustInfo.ReadOnly = true;
+            this.dataCustInfo.Size = new System.Drawing.Size(406, 399);
+            this.dataCustInfo.TabIndex = 1;
+            // 
+            // customerID2
+            // 
+            this.customerID2.HeaderText = "Customer ID";
+            this.customerID2.Name = "customerID2";
+            this.customerID2.ReadOnly = true;
+            this.customerID2.Width = 120;
+            // 
+            // CustomerName
+            // 
+            this.CustomerName.HeaderText = "Customer Name";
+            this.CustomerName.Name = "CustomerName";
+            this.CustomerName.ReadOnly = true;
+            this.CustomerName.Width = 140;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1160, 639);
+            this.ClientSize = new System.Drawing.Size(1339, 632);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -706,15 +816,18 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridCustomers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCustomers)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridGymClass)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGymClass)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataEnrollGymClass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataEnrollCust)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataEnrollGym)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataEnrollment)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataCustInfo1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCustInfo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -724,8 +837,8 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.DataGridView dataGridCustomers;
-        private System.Windows.Forms.DataGridView dataGridGymClass;
+        private System.Windows.Forms.DataGridView dataCustomers;
+        private System.Windows.Forms.DataGridView dataGymClass;
         private System.Windows.Forms.DataGridViewTextBoxColumn custID;
         private System.Windows.Forms.DataGridViewTextBoxColumn custLastName;
         private System.Windows.Forms.DataGridViewTextBoxColumn custFirstName;
@@ -758,34 +871,45 @@
         private System.Windows.Forms.DataGridView dataEnrollment;
         private System.Windows.Forms.Button btnCustAdd;
         private System.Windows.Forms.Button btnGymAdd;
-        private System.Windows.Forms.TextBox txtEnrollDateTime;
-        private System.Windows.Forms.Label lblEnrollDateTime;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblEnrollClass;
         private System.Windows.Forms.TextBox txtEnrollLength;
-        private System.Windows.Forms.TextBox txtEnrollClass;
-        private System.Windows.Forms.TextBox txtEnrollCust;
+        private System.Windows.Forms.TextBox txtEnrollClassName;
+        private System.Windows.Forms.TextBox txtEnrollCustName;
         private System.Windows.Forms.Label lblEnrollCust;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customerID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn classesId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lengthEnrollment;
-        private System.Windows.Forms.DataGridViewTextBoxColumn enrollment;
         private System.Windows.Forms.Button btnEnroll;
-        private System.Windows.Forms.Button btnCustEdit;
-        private System.Windows.Forms.Button btnGymEdit;
-        private System.Windows.Forms.Button btnCustomerClear;
-        private System.Windows.Forms.Button btnGymClassClear;
-        private System.Windows.Forms.DataGridView dataEnrollGymClass;
+        private System.Windows.Forms.Button btnCustSave;
+        private System.Windows.Forms.Button btnGymSave;
+        private System.Windows.Forms.Button btnCustClear;
+        private System.Windows.Forms.Button btnGymClear;
+        private System.Windows.Forms.DataGridView dataEnrollCust;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridView dataEnrollCust;
+        private System.Windows.Forms.DataGridView dataEnrollGym;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.TextBox txtEnrollCustID;
+        private System.Windows.Forms.TextBox txtEnrollClassID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enrollmentID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn classesId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lengthEnrollment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enrollment;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.DataGridView dataCustInfo1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridView dataCustInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerID2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CustomerName;
     }
 }
 
