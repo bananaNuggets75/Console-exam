@@ -75,6 +75,19 @@ namespace Polgo_Midterm
 
         }
 
+        private void ClassesInformation()
+        {
+            dataCustInfo.Rows.Clear();
+            con.Open();
+            cmd = new SqlCommand(@"SELECT custID, custLName, custFname, custMName", con);
+            rdr = cmd.ExecuteReader();
+            while (rdr.Read())
+            {
+                dataCustInfo.Rows.Add(rdr[0].ToString(), rdr[1].ToString(), rdr[2].ToString(), rdr[3].ToString());
+            }
+            con.Close();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             SetConnection();

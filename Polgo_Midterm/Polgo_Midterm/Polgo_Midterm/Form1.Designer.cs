@@ -104,6 +104,8 @@
             this.dataCustInfo = new System.Windows.Forms.DataGridView();
             this.customerID2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCustomers)).BeginInit();
@@ -783,7 +785,9 @@
             this.dataCustInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataCustInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.customerID2,
-            this.CustomerName});
+            this.CustomerName,
+            this.Column1,
+            this.Column2});
             this.dataCustInfo.Location = new System.Drawing.Point(43, 86);
             this.dataCustInfo.Name = "dataCustInfo";
             this.dataCustInfo.ReadOnly = true;
@@ -803,6 +807,18 @@
             this.CustomerName.Name = "CustomerName";
             this.CustomerName.ReadOnly = true;
             this.CustomerName.Width = 140;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Column2";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Form1
             // 
@@ -910,6 +926,8 @@
         private System.Windows.Forms.DataGridView dataCustInfo;
         private System.Windows.Forms.DataGridViewTextBoxColumn customerID2;
         private System.Windows.Forms.DataGridViewTextBoxColumn CustomerName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }
 
