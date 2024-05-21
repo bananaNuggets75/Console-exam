@@ -67,8 +67,8 @@
             this.instructorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.monthlyFee = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.txtEnrollClassID = new System.Windows.Forms.TextBox();
-            this.txtEnrollCustID = new System.Windows.Forms.TextBox();
+            this.txtEnrollClassName = new System.Windows.Forms.TextBox();
+            this.txtEnrollCustName = new System.Windows.Forms.TextBox();
             this.dataEnrollCust = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -81,19 +81,13 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEnroll = new System.Windows.Forms.Button();
-            this.txtEnrollCustName = new System.Windows.Forms.TextBox();
+            this.txtEnrollCustID = new System.Windows.Forms.TextBox();
             this.lblEnrollCust = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblEnrollClass = new System.Windows.Forms.Label();
             this.txtEnrollLength = new System.Windows.Forms.TextBox();
-            this.txtEnrollClassName = new System.Windows.Forms.TextBox();
+            this.txtEnrollClassID = new System.Windows.Forms.TextBox();
             this.btnEnrollCancel = new System.Windows.Forms.Button();
-            this.dataEnrollment = new System.Windows.Forms.DataGridView();
-            this.enrollmentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.customerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.classesId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lengthEnrollment = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.enrollment = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dataCustInfo1 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -106,6 +100,14 @@
             this.CustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataEnroll = new System.Windows.Forms.DataGridView();
+            this.enrollmentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.custID2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.classID2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lengthEnrollment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enrollmentDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblEnrollClassName = new System.Windows.Forms.Label();
+            this.lblEnrollCustName = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCustomers)).BeginInit();
@@ -114,10 +116,10 @@
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataEnrollCust)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataEnrollGym)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataEnrollment)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCustInfo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataCustInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataEnroll)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -234,6 +236,7 @@
             // txtCustAddress
             // 
             this.txtCustAddress.Location = new System.Drawing.Point(79, 209);
+            this.txtCustAddress.Multiline = true;
             this.txtCustAddress.Name = "txtCustAddress";
             this.txtCustAddress.Size = new System.Drawing.Size(100, 20);
             this.txtCustAddress.TabIndex = 5;
@@ -241,6 +244,7 @@
             // txtCustMName
             // 
             this.txtCustMName.Location = new System.Drawing.Point(79, 162);
+            this.txtCustMName.Multiline = true;
             this.txtCustMName.Name = "txtCustMName";
             this.txtCustMName.Size = new System.Drawing.Size(100, 20);
             this.txtCustMName.TabIndex = 4;
@@ -248,6 +252,7 @@
             // txtCustFName
             // 
             this.txtCustFName.Location = new System.Drawing.Point(79, 120);
+            this.txtCustFName.Multiline = true;
             this.txtCustFName.Name = "txtCustFName";
             this.txtCustFName.Size = new System.Drawing.Size(100, 20);
             this.txtCustFName.TabIndex = 3;
@@ -255,6 +260,7 @@
             // txtCustLName
             // 
             this.txtCustLName.Location = new System.Drawing.Point(79, 76);
+            this.txtCustLName.Multiline = true;
             this.txtCustLName.Name = "txtCustLName";
             this.txtCustLName.Size = new System.Drawing.Size(100, 20);
             this.txtCustLName.TabIndex = 2;
@@ -262,6 +268,7 @@
             // txtCustID
             // 
             this.txtCustID.Location = new System.Drawing.Point(79, 37);
+            this.txtCustID.Multiline = true;
             this.txtCustID.Name = "txtCustID";
             this.txtCustID.Size = new System.Drawing.Size(100, 20);
             this.txtCustID.TabIndex = 1;
@@ -277,10 +284,10 @@
             this.custFirstName,
             this.custMiddleName,
             this.custAddress});
-            this.dataCustomers.Location = new System.Drawing.Point(194, 6);
+            this.dataCustomers.Location = new System.Drawing.Point(554, 16);
             this.dataCustomers.Name = "dataCustomers";
             this.dataCustomers.ReadOnly = true;
-            this.dataCustomers.Size = new System.Drawing.Size(535, 354);
+            this.dataCustomers.Size = new System.Drawing.Size(690, 354);
             this.dataCustomers.TabIndex = 0;
             this.dataCustomers.SelectionChanged += new System.EventHandler(this.dataCustomers_SelectionChanged);
             // 
@@ -474,19 +481,21 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.txtEnrollClassID);
-            this.tabPage3.Controls.Add(this.txtEnrollCustID);
+            this.tabPage3.Controls.Add(this.lblEnrollCustName);
+            this.tabPage3.Controls.Add(this.lblEnrollClassName);
+            this.tabPage3.Controls.Add(this.dataEnroll);
+            this.tabPage3.Controls.Add(this.txtEnrollClassName);
+            this.tabPage3.Controls.Add(this.txtEnrollCustName);
             this.tabPage3.Controls.Add(this.dataEnrollCust);
             this.tabPage3.Controls.Add(this.dataEnrollGym);
             this.tabPage3.Controls.Add(this.btnEnroll);
-            this.tabPage3.Controls.Add(this.txtEnrollCustName);
+            this.tabPage3.Controls.Add(this.txtEnrollCustID);
             this.tabPage3.Controls.Add(this.lblEnrollCust);
             this.tabPage3.Controls.Add(this.label2);
             this.tabPage3.Controls.Add(this.lblEnrollClass);
             this.tabPage3.Controls.Add(this.txtEnrollLength);
-            this.tabPage3.Controls.Add(this.txtEnrollClassName);
+            this.tabPage3.Controls.Add(this.txtEnrollClassID);
             this.tabPage3.Controls.Add(this.btnEnrollCancel);
-            this.tabPage3.Controls.Add(this.dataEnrollment);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -495,19 +504,19 @@
             this.tabPage3.Text = "Cutomer Enrollment";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // txtEnrollClassID
+            // txtEnrollClassName
             // 
-            this.txtEnrollClassID.Location = new System.Drawing.Point(76, 50);
-            this.txtEnrollClassID.Name = "txtEnrollClassID";
-            this.txtEnrollClassID.Size = new System.Drawing.Size(100, 20);
-            this.txtEnrollClassID.TabIndex = 14;
+            this.txtEnrollClassName.Location = new System.Drawing.Point(101, 104);
+            this.txtEnrollClassName.Name = "txtEnrollClassName";
+            this.txtEnrollClassName.Size = new System.Drawing.Size(100, 20);
+            this.txtEnrollClassName.TabIndex = 14;
             // 
-            // txtEnrollCustID
+            // txtEnrollCustName
             // 
-            this.txtEnrollCustID.Location = new System.Drawing.Point(149, 7);
-            this.txtEnrollCustID.Name = "txtEnrollCustID";
-            this.txtEnrollCustID.Size = new System.Drawing.Size(100, 20);
-            this.txtEnrollCustID.TabIndex = 13;
+            this.txtEnrollCustName.Location = new System.Drawing.Point(101, 32);
+            this.txtEnrollCustName.Name = "txtEnrollCustName";
+            this.txtEnrollCustName.Size = new System.Drawing.Size(100, 20);
+            this.txtEnrollCustName.TabIndex = 13;
             // 
             // dataEnrollCust
             // 
@@ -609,17 +618,17 @@
             this.btnEnroll.UseVisualStyleBackColor = true;
             this.btnEnroll.Click += new System.EventHandler(this.btnEnroll_Click);
             // 
-            // txtEnrollCustName
+            // txtEnrollCustID
             // 
-            this.txtEnrollCustName.Location = new System.Drawing.Point(22, 24);
-            this.txtEnrollCustName.Name = "txtEnrollCustName";
-            this.txtEnrollCustName.Size = new System.Drawing.Size(100, 20);
-            this.txtEnrollCustName.TabIndex = 9;
+            this.txtEnrollCustID.Location = new System.Drawing.Point(101, 6);
+            this.txtEnrollCustID.Name = "txtEnrollCustID";
+            this.txtEnrollCustID.Size = new System.Drawing.Size(100, 20);
+            this.txtEnrollCustID.TabIndex = 9;
             // 
             // lblEnrollCust
             // 
             this.lblEnrollCust.AutoSize = true;
-            this.lblEnrollCust.Location = new System.Drawing.Point(28, 7);
+            this.lblEnrollCust.Location = new System.Drawing.Point(7, 6);
             this.lblEnrollCust.Name = "lblEnrollCust";
             this.lblEnrollCust.Size = new System.Drawing.Size(68, 13);
             this.lblEnrollCust.TabIndex = 8;
@@ -628,7 +637,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 100);
+            this.label2.Location = new System.Drawing.Point(18, 152);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 13);
             this.label2.TabIndex = 7;
@@ -637,7 +646,7 @@
             // lblEnrollClass
             // 
             this.lblEnrollClass.AutoSize = true;
-            this.lblEnrollClass.Location = new System.Drawing.Point(26, 50);
+            this.lblEnrollClass.Location = new System.Drawing.Point(10, 77);
             this.lblEnrollClass.Name = "lblEnrollClass";
             this.lblEnrollClass.Size = new System.Drawing.Size(49, 13);
             this.lblEnrollClass.TabIndex = 6;
@@ -645,17 +654,17 @@
             // 
             // txtEnrollLength
             // 
-            this.txtEnrollLength.Location = new System.Drawing.Point(22, 116);
+            this.txtEnrollLength.Location = new System.Drawing.Point(21, 168);
             this.txtEnrollLength.Name = "txtEnrollLength";
             this.txtEnrollLength.Size = new System.Drawing.Size(100, 20);
             this.txtEnrollLength.TabIndex = 5;
             // 
-            // txtEnrollClassName
+            // txtEnrollClassID
             // 
-            this.txtEnrollClassName.Location = new System.Drawing.Point(22, 73);
-            this.txtEnrollClassName.Name = "txtEnrollClassName";
-            this.txtEnrollClassName.Size = new System.Drawing.Size(100, 20);
-            this.txtEnrollClassName.TabIndex = 4;
+            this.txtEnrollClassID.Location = new System.Drawing.Point(101, 74);
+            this.txtEnrollClassID.Name = "txtEnrollClassID";
+            this.txtEnrollClassID.Size = new System.Drawing.Size(100, 20);
+            this.txtEnrollClassID.TabIndex = 4;
             // 
             // btnEnrollCancel
             // 
@@ -666,56 +675,6 @@
             this.btnEnrollCancel.Text = "CANCEL";
             this.btnEnrollCancel.UseVisualStyleBackColor = true;
             this.btnEnrollCancel.Click += new System.EventHandler(this.btnEnrollCancel_Click);
-            // 
-            // dataEnrollment
-            // 
-            this.dataEnrollment.AllowUserToAddRows = false;
-            this.dataEnrollment.AllowUserToDeleteRows = false;
-            this.dataEnrollment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataEnrollment.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.enrollmentID,
-            this.customerID,
-            this.classesId,
-            this.lengthEnrollment,
-            this.enrollment});
-            this.dataEnrollment.Location = new System.Drawing.Point(551, 377);
-            this.dataEnrollment.Name = "dataEnrollment";
-            this.dataEnrollment.ReadOnly = true;
-            this.dataEnrollment.Size = new System.Drawing.Size(710, 125);
-            this.dataEnrollment.TabIndex = 0;
-            this.dataEnrollment.SelectionChanged += new System.EventHandler(this.dataEnrollment_SelectionChanged);
-            // 
-            // enrollmentID
-            // 
-            this.enrollmentID.HeaderText = "Enroll ID";
-            this.enrollmentID.Name = "enrollmentID";
-            this.enrollmentID.ReadOnly = true;
-            // 
-            // customerID
-            // 
-            this.customerID.HeaderText = "Customer ID";
-            this.customerID.Name = "customerID";
-            this.customerID.ReadOnly = true;
-            // 
-            // classesId
-            // 
-            this.classesId.HeaderText = "Class ID";
-            this.classesId.Name = "classesId";
-            this.classesId.ReadOnly = true;
-            // 
-            // lengthEnrollment
-            // 
-            this.lengthEnrollment.HeaderText = "Enrollment Length";
-            this.lengthEnrollment.Name = "lengthEnrollment";
-            this.lengthEnrollment.ReadOnly = true;
-            this.lengthEnrollment.Width = 130;
-            // 
-            // enrollment
-            // 
-            this.enrollment.HeaderText = "Enrollment Date and Time";
-            this.enrollment.Name = "enrollment";
-            this.enrollment.ReadOnly = true;
-            this.enrollment.Width = 160;
             // 
             // tabPage4
             // 
@@ -820,6 +779,74 @@
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
+            // dataEnroll
+            // 
+            this.dataEnroll.AllowUserToAddRows = false;
+            this.dataEnroll.AllowUserToDeleteRows = false;
+            this.dataEnroll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataEnroll.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.enrollmentID,
+            this.custID2,
+            this.classID2,
+            this.lengthEnrollment,
+            this.enrollmentDateTime});
+            this.dataEnroll.Location = new System.Drawing.Point(594, 377);
+            this.dataEnroll.Name = "dataEnroll";
+            this.dataEnroll.ReadOnly = true;
+            this.dataEnroll.Size = new System.Drawing.Size(667, 145);
+            this.dataEnroll.TabIndex = 15;
+            this.dataEnroll.SelectionChanged += new System.EventHandler(this.dataEnroll_SelectionChanged);
+            // 
+            // enrollmentID
+            // 
+            this.enrollmentID.HeaderText = "Enrollment ID";
+            this.enrollmentID.Name = "enrollmentID";
+            this.enrollmentID.ReadOnly = true;
+            // 
+            // custID2
+            // 
+            this.custID2.HeaderText = "Customer ID";
+            this.custID2.Name = "custID2";
+            this.custID2.ReadOnly = true;
+            // 
+            // classID2
+            // 
+            this.classID2.HeaderText = "Class ID";
+            this.classID2.Name = "classID2";
+            this.classID2.ReadOnly = true;
+            // 
+            // lengthEnrollment
+            // 
+            this.lengthEnrollment.HeaderText = "Length of Enrollment";
+            this.lengthEnrollment.Name = "lengthEnrollment";
+            this.lengthEnrollment.ReadOnly = true;
+            this.lengthEnrollment.Width = 150;
+            // 
+            // enrollmentDateTime
+            // 
+            this.enrollmentDateTime.HeaderText = "Enrollment Date & Time";
+            this.enrollmentDateTime.Name = "enrollmentDateTime";
+            this.enrollmentDateTime.ReadOnly = true;
+            this.enrollmentDateTime.Width = 150;
+            // 
+            // lblEnrollClassName
+            // 
+            this.lblEnrollClassName.AutoSize = true;
+            this.lblEnrollClassName.Location = new System.Drawing.Point(10, 104);
+            this.lblEnrollClassName.Name = "lblEnrollClassName";
+            this.lblEnrollClassName.Size = new System.Drawing.Size(66, 13);
+            this.lblEnrollClassName.TabIndex = 16;
+            this.lblEnrollClassName.Text = "Class Name:";
+            // 
+            // lblEnrollCustName
+            // 
+            this.lblEnrollCustName.AutoSize = true;
+            this.lblEnrollCustName.Location = new System.Drawing.Point(10, 32);
+            this.lblEnrollCustName.Name = "lblEnrollCustName";
+            this.lblEnrollCustName.Size = new System.Drawing.Size(85, 13);
+            this.lblEnrollCustName.TabIndex = 17;
+            this.lblEnrollCustName.Text = "Customer Name:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -840,10 +867,10 @@
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataEnrollCust)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataEnrollGym)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataEnrollment)).EndInit();
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataCustInfo1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataCustInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataEnroll)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -884,14 +911,13 @@
         private System.Windows.Forms.Label lblGymClassID;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btnEnrollCancel;
-        private System.Windows.Forms.DataGridView dataEnrollment;
         private System.Windows.Forms.Button btnCustAdd;
         private System.Windows.Forms.Button btnGymAdd;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblEnrollClass;
         private System.Windows.Forms.TextBox txtEnrollLength;
-        private System.Windows.Forms.TextBox txtEnrollClassName;
-        private System.Windows.Forms.TextBox txtEnrollCustName;
+        private System.Windows.Forms.TextBox txtEnrollClassID;
+        private System.Windows.Forms.TextBox txtEnrollCustID;
         private System.Windows.Forms.Label lblEnrollCust;
         private System.Windows.Forms.Button btnEnroll;
         private System.Windows.Forms.Button btnCustSave;
@@ -909,13 +935,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.TextBox txtEnrollCustID;
-        private System.Windows.Forms.TextBox txtEnrollClassID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn enrollmentID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customerID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn classesId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lengthEnrollment;
-        private System.Windows.Forms.DataGridViewTextBoxColumn enrollment;
+        private System.Windows.Forms.TextBox txtEnrollCustName;
+        private System.Windows.Forms.TextBox txtEnrollClassName;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.DataGridView dataCustInfo1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
@@ -928,6 +949,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CustomerName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridView dataEnroll;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enrollmentID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn custID2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn classID2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lengthEnrollment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enrollmentDateTime;
+        private System.Windows.Forms.Label lblEnrollCustName;
+        private System.Windows.Forms.Label lblEnrollClassName;
     }
 }
 

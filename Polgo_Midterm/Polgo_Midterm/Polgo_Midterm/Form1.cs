@@ -25,7 +25,7 @@ namespace Polgo_Midterm
         private void SetConnection()
         {
             con = new SqlConnection(@"Data Source = DESKTOP-PEML9SP\SQLEXPRESS01;
-                Initial Catalog = POLGO_FINALS;
+                Initial Catalog = POLGO_MIDTERM195_DB;
                 user ID = ken; 
                 password = mireille34;");
         }
@@ -63,13 +63,13 @@ namespace Polgo_Midterm
 
         private void LoadEnrollment()
         {
-            dataEnrollment.Rows.Clear();
+            dataEnroll.Rows.Clear();
             con.Open();
-            cmd = new SqlCommand(@"SELECT enrollmentID, custLName, custFName, className, lengthEnrollment, enrollmentDateTime FROM ENROLLMENT INNER JOIN CUSTOMERS ON ENROLLMENT.custID = CUSTOMERS.custID INNER JOIN GYMCLASS ON ENROLLMENT.classID = GYMCLASS.classID;", con);
+            cmd = new SqlCommand(@"SELECT enrollmentID, custLName, className, lengthEnrollment, enrollmentDateTime FROM ENROLLMENT INNER JOIN CUSTOMERS ON ENROLLMENT.custID = CUSTOMERS.custID INNER JOIN GYMCLASS ON ENROLLMENT.classID = GYMCLASS.classID;", con);
             rdr = cmd.ExecuteReader();
             while (rdr.Read())
             {
-                dataCustomers.Rows.Add(rdr[0].ToString(), rdr[1].ToString(), rdr[2].ToString(), rdr[3].ToString(), rdr[4].ToString());
+                dataEnroll.Rows.Add(rdr[0].ToString(), rdr[1].ToString(), rdr[2].ToString(), rdr[3].ToString(), rdr[4].ToString());
             }
             con.Close();
 
@@ -117,8 +117,10 @@ namespace Polgo_Midterm
             txtGymInsName.Clear();
             txtGymMFee.Clear();
 
-            txtEnrollCustName.Clear();
+            txtEnrollCustID.Clear();
             txtEnrollClassName.Clear();
+            txtEnrollClassID.Clear();
+            txtEnrollCustName.Clear();
             txtEnrollLength.Clear();
             
             btnCustAdd.Enabled = true;
@@ -139,26 +141,27 @@ namespace Polgo_Midterm
                 + "', '" + txtCustAddress.Text + "')", con);
             cmd.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("Class Added", "Success");
-            LoadGymClass();
+            MessageBox.Show("Customer Added", "Success");
+            LoadCustomers();
             ClearAll();
 
         }
 
         private void btnCustSave_Click(object sender, EventArgs e)
         {
-            con.Open();
-            cmd = new SqlCommand(@"UPDATE CUSTOMERS SET custLName = '" + txtCustLName.Text 
-                + "', custFName = '" + txtCustFName.Text 
-                + "', custMName = '" + txtCustMName.Text 
-                + "', custAddress = '" + txtCustAddress.Text 
-                + "' WHERE custID = '" + txtCustID.Text + "';", con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-            MessageBox.Show("Successfully Updated", "Success");
-            LoadCustomers();
-            ClearAll();
-
+            if (dataCustomers.SelectedRows.Count > 0)
+            {
+                con.Open();
+                cmd = new SqlCommand(@"UPDATE CUSTOMERS SET custLName = '" + txtCustLName.Text
+                    + "', custFName = '" + txtCustFName.Text
+                    + "', custMName = '" + txtCustMName.Text
+                    + "', custAddress = '" + txtCustAddress.Text
+                    + "' WHERE custID = '" + txtCustID.Text + "';", con);
+                con.Close();
+                MessageBox.Show("Successfully Updated", "Success");
+                LoadCustomers();
+                ClearAll();
+            }
         }
 
         private void btnCustomerClear_Click(object sender, EventArgs e)
@@ -176,7 +179,7 @@ namespace Polgo_Midterm
             cmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Customer Added", "Success");
-            LoadCustomers();
+            LoadGymClass();
             ClearAll();
 
         }
@@ -191,7 +194,7 @@ namespace Polgo_Midterm
             cmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Successfully Updated", "Success");
-            LoadCustomers();
+            LoadGymClass();
             ClearAll();
         }
 
@@ -206,8 +209,8 @@ namespace Polgo_Midterm
         {
                 con.Open();
                 cmd = new SqlCommand(@"INSERT INTO ENROLLMENT (custID, classID, lengthEnrollment, enrollmentDateTime)  
-                    VALUES ('" + txtCustID.Text
-                    + "', '" + txtGymClassID.Text 
+                    VALUES ('" + txtEnrollCustID.Text
+                    + "', '" + txtEnrollClassID.Text 
                     + "', '" + txtEnrollLength.Text 
                     + "','" + DateTime.Now.ToString("yyyy'-'MM'-'dd' 'HH':'mm':'ss") + "');", con);
                 cmd.ExecuteNonQuery();
@@ -255,13 +258,6 @@ namespace Polgo_Midterm
             }
         }
 
-        private void dataEnrollment_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dataEnrollment.SelectedRows.Count > 0)
-            {
-                txtEnrollLength.Text = dataEnrollment.SelectedRows[0].Cells[3].Value.ToString();
-            }
-        }
 
         private void dataEnrollCust_SelectionChanged(object sender, EventArgs e)
         {
@@ -283,5 +279,12 @@ namespace Polgo_Midterm
             }
         }
 
+        private void dataEnroll_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataEnroll.SelectedRows.Count > 0)
+            {
+                txtEnrollLength.Text = dataEnroll.SelectedRows[0].Cells[3].Value.ToString();
+            }
+        }
     }
     }
