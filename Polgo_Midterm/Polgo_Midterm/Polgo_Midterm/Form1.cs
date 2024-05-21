@@ -75,15 +75,14 @@ namespace Polgo_Midterm
 
         }
 
-        private void ClassesInformation()
+        private void LoadClassesInformation()
         {
-            dataCustInfo.Rows.Clear();
             con.Open();
-            cmd = new SqlCommand(@"SELECT custID, custLName, custFname, custMName", con);
+            cmd = new SqlCommand(@"SELECT className FROM GYMCLASS WHERE custLName = '" + txtCustNameInfo.Text + "'", con);
             rdr = cmd.ExecuteReader();
             while (rdr.Read())
             {
-                dataCustInfo.Rows.Add(rdr[0].ToString(), rdr[1].ToString(), rdr[2].ToString(), rdr[3].ToString());
+                dataCustInfo.Rows.Add(rdr[0].ToString());
             }
             con.Close();
         }
@@ -94,6 +93,7 @@ namespace Polgo_Midterm
             LoadCustomers();
             LoadGymClass();
             LoadEnrollment();
+            LoadClassesInformation();
 
             btnCustAdd.Enabled = true;
             btnGymAdd.Enabled = true;
@@ -225,6 +225,11 @@ namespace Polgo_Midterm
             ClearAll();
         }
 
+        private void btnShowClass_Click(object sender, EventArgs e)
+        {
+            LoadClassesInformation();
+        }
+
 
 
         private void dataGridGymClass_SelectionChanged(object sender, EventArgs e)
@@ -284,6 +289,23 @@ namespace Polgo_Midterm
             if (dataEnroll.SelectedRows.Count > 0)
             {
                 txtEnrollLength.Text = dataEnroll.SelectedRows[0].Cells[3].Value.ToString();
+            }
+        }
+
+        private void dataCustInfo_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataCustInfo.SelectedRows.Count > 0)
+            {
+                DataGridViewRow cell = dataCustInfo.SelectedRows[0];
+                txtCustNameInfo.Text = cell.Cells[0].Value.ToString();
+            }
+        }
+
+        private void dataCLassInfo_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataCLassInfo.SelectedRows.Count > 0)
+            {
+                
             }
         }
     }
