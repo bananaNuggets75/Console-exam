@@ -24,9 +24,10 @@ namespace Polgo_Midterm
 
         private void SetConnection()
         {
-            con = new SqlConnection(@"Data Source = RETARDLUL\SQLEXPRESS;
+            con = new SqlConnection(@"Data Source = DESKTOP-PEML9SP\SQLEXPRESS01;
                 Initial Catalog = POLGO_MIDTERM195_DB;
-                Integrated security = true;");
+                user ID = ken;
+                password = mireille34;");
         }
 
         private void LoadCustomers()
@@ -317,18 +318,13 @@ namespace Polgo_Midterm
             }
         }
 
-        private void dataCLassInfo_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dataCLassInfo.SelectedRows.Count > 0)
-            {
-                
-            }
-        }
 
         private void btnClearClass_Click(object sender, EventArgs e)
         {
             ClearAll();
             dataCLassInfo.Rows.Clear();
         }
+
+        
     }
     }

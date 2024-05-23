@@ -58,3 +58,7 @@ C:\Users\MTCL\Documents\kenan\Polgo_Midterm\Polgo_Midterm\Polgo_Midterm\obj\Debu
 C:\Users\MTCL\Documents\kenan\Polgo_Midterm\Polgo_Midterm\Polgo_Midterm\obj\Debug\Polgo_Midterm.csproj.CoreCompileInputs.cache
 C:\Users\MTCL\Documents\kenan\Polgo_Midterm\Polgo_Midterm\Polgo_Midterm\obj\Debug\Polgo_Midterm.exe
 C:\Users\MTCL\Documents\kenan\Polgo_Midterm\Polgo_Midterm\Polgo_Midterm\obj\Debug\Polgo_Midterm.pdb
+C:\Users\MTCL\Documents\kenan\Polgo_Midterm\Polgo_Midterm\Polgo_Midterm\bin\Debug\MetroFramework.Design.dll
+C:\Users\MTCL\Documents\kenan\Polgo_Midterm\Polgo_Midterm\Polgo_Midterm\bin\Debug\MetroFramework.dll
+C:\Users\MTCL\Documents\kenan\Polgo_Midterm\Polgo_Midterm\Polgo_Midterm\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\MTCL\Documents\kenan\Polgo_Midterm\Polgo_Midterm\Polgo_Midterm\obj\Debug\Polgo_Midterm.csproj.CopyComplete

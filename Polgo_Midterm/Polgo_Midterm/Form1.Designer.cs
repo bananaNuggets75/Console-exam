@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btnCustClear = new System.Windows.Forms.Button();
             this.btnCustSave = new System.Windows.Forms.Button();
             this.btnCustAdd = new System.Windows.Forms.Button();
@@ -49,7 +47,6 @@
             this.custFirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.custMiddleName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.custAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnGymClear = new System.Windows.Forms.Button();
             this.btnGymSave = new System.Windows.Forms.Button();
             this.btnGymAdd = new System.Windows.Forms.Button();
@@ -66,10 +63,14 @@
             this.className = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.instructorName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.monthlyFee = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.lblEnrollCustName = new System.Windows.Forms.Label();
             this.lblEnrollClassName = new System.Windows.Forms.Label();
             this.dataEnroll = new System.Windows.Forms.DataGridView();
+            this.enrollmentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.custID2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.classID2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lengthEnrollment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enrollmentDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtEnrollClassName = new System.Windows.Forms.TextBox();
             this.txtEnrollCustName = new System.Windows.Forms.TextBox();
             this.dataEnrollCust = new System.Windows.Forms.DataGridView();
@@ -91,82 +92,42 @@
             this.txtEnrollLength = new System.Windows.Forms.TextBox();
             this.txtEnrollClassID = new System.Windows.Forms.TextBox();
             this.btnEnrollCancel = new System.Windows.Forms.Button();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.txtClassCustID = new System.Windows.Forms.TextBox();
             this.lblCustName = new System.Windows.Forms.Label();
             this.btnClearClass = new System.Windows.Forms.Button();
             this.btnShowClass = new System.Windows.Forms.Button();
             this.txtCustNameInfo = new System.Windows.Forms.TextBox();
-            this.dataCLassInfo = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataCustInfo = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.CustID23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtClassCustID = new System.Windows.Forms.TextBox();
-            this.enrollmentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.custID2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.classID2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lengthEnrollment = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.enrollmentDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tab = new MetroFramework.Controls.MetroTabControl();
+            this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
+            this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
+            this.dataCLassInfo = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataCustomers)).BeginInit();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGymClass)).BeginInit();
-            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataEnroll)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataEnrollCust)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataEnrollGym)).BeginInit();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataCLassInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataCustInfo)).BeginInit();
+            this.tab.SuspendLayout();
+            this.metroTabPage1.SuspendLayout();
+            this.metroTabPage2.SuspendLayout();
+            this.metroTabPage3.SuspendLayout();
+            this.metroTabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCLassInfo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(16, 50);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1728, 676);
-            this.tabControl1.TabIndex = 0;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.btnCustClear);
-            this.tabPage1.Controls.Add(this.btnCustSave);
-            this.tabPage1.Controls.Add(this.btnCustAdd);
-            this.tabPage1.Controls.Add(this.lblCustAddress);
-            this.tabPage1.Controls.Add(this.lblCustMname);
-            this.tabPage1.Controls.Add(this.lblCustFname);
-            this.tabPage1.Controls.Add(this.lblCustLname);
-            this.tabPage1.Controls.Add(this.lblCustID);
-            this.tabPage1.Controls.Add(this.txtCustAddress);
-            this.tabPage1.Controls.Add(this.txtCustMName);
-            this.tabPage1.Controls.Add(this.txtCustFName);
-            this.tabPage1.Controls.Add(this.txtCustLName);
-            this.tabPage1.Controls.Add(this.txtCustID);
-            this.tabPage1.Controls.Add(this.dataCustomers);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage1.Size = new System.Drawing.Size(1720, 647);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Customer";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btnCustClear
             // 
             this.btnCustClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustClear.Location = new System.Drawing.Point(447, 356);
-            this.btnCustClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCustClear.Location = new System.Drawing.Point(330, 470);
             this.btnCustClear.Name = "btnCustClear";
-            this.btnCustClear.Size = new System.Drawing.Size(119, 40);
+            this.btnCustClear.Size = new System.Drawing.Size(89, 32);
             this.btnCustClear.TabIndex = 13;
             this.btnCustClear.Text = "CLEAR";
             this.btnCustClear.UseVisualStyleBackColor = true;
@@ -175,10 +136,9 @@
             // btnCustSave
             // 
             this.btnCustSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustSave.Location = new System.Drawing.Point(261, 356);
-            this.btnCustSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCustSave.Location = new System.Drawing.Point(191, 470);
             this.btnCustSave.Name = "btnCustSave";
-            this.btnCustSave.Size = new System.Drawing.Size(119, 40);
+            this.btnCustSave.Size = new System.Drawing.Size(89, 32);
             this.btnCustSave.TabIndex = 12;
             this.btnCustSave.Text = "SAVE";
             this.btnCustSave.UseVisualStyleBackColor = true;
@@ -187,10 +147,9 @@
             // btnCustAdd
             // 
             this.btnCustAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustAdd.Location = new System.Drawing.Point(104, 356);
-            this.btnCustAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCustAdd.Location = new System.Drawing.Point(73, 470);
             this.btnCustAdd.Name = "btnCustAdd";
-            this.btnCustAdd.Size = new System.Drawing.Size(119, 40);
+            this.btnCustAdd.Size = new System.Drawing.Size(89, 32);
             this.btnCustAdd.TabIndex = 11;
             this.btnCustAdd.Text = "ADD";
             this.btnCustAdd.UseVisualStyleBackColor = true;
@@ -200,10 +159,9 @@
             // 
             this.lblCustAddress.AutoSize = true;
             this.lblCustAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustAddress.Location = new System.Drawing.Point(9, 257);
-            this.lblCustAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCustAddress.Location = new System.Drawing.Point(212, 354);
             this.lblCustAddress.Name = "lblCustAddress";
-            this.lblCustAddress.Size = new System.Drawing.Size(116, 29);
+            this.lblCustAddress.Size = new System.Drawing.Size(93, 24);
             this.lblCustAddress.TabIndex = 10;
             this.lblCustAddress.Text = "Address:";
             // 
@@ -211,10 +169,9 @@
             // 
             this.lblCustMname.AutoSize = true;
             this.lblCustMname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustMname.Location = new System.Drawing.Point(9, 199);
-            this.lblCustMname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCustMname.Location = new System.Drawing.Point(187, 273);
             this.lblCustMname.Name = "lblCustMname";
-            this.lblCustMname.Size = new System.Drawing.Size(176, 29);
+            this.lblCustMname.Size = new System.Drawing.Size(140, 24);
             this.lblCustMname.TabIndex = 9;
             this.lblCustMname.Text = "Middle Name:";
             // 
@@ -222,10 +179,9 @@
             // 
             this.lblCustFname.AutoSize = true;
             this.lblCustFname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustFname.Location = new System.Drawing.Point(9, 148);
-            this.lblCustFname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCustFname.Location = new System.Drawing.Point(200, 186);
             this.lblCustFname.Name = "lblCustFname";
-            this.lblCustFname.Size = new System.Drawing.Size(148, 29);
+            this.lblCustFname.Size = new System.Drawing.Size(117, 24);
             this.lblCustFname.TabIndex = 8;
             this.lblCustFname.Text = "First Name:";
             // 
@@ -233,10 +189,9 @@
             // 
             this.lblCustLname.AutoSize = true;
             this.lblCustLname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustLname.Location = new System.Drawing.Point(8, 97);
-            this.lblCustLname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCustLname.Location = new System.Drawing.Point(187, 109);
             this.lblCustLname.Name = "lblCustLname";
-            this.lblCustLname.Size = new System.Drawing.Size(144, 29);
+            this.lblCustLname.Size = new System.Drawing.Size(114, 24);
             this.lblCustLname.TabIndex = 7;
             this.lblCustLname.Text = "Last Name:";
             // 
@@ -244,57 +199,61 @@
             // 
             this.lblCustID.AutoSize = true;
             this.lblCustID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustID.Location = new System.Drawing.Point(8, 46);
-            this.lblCustID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCustID.Location = new System.Drawing.Point(187, 30);
             this.lblCustID.Name = "lblCustID";
-            this.lblCustID.Size = new System.Drawing.Size(164, 29);
+            this.lblCustID.Size = new System.Drawing.Size(130, 24);
             this.lblCustID.TabIndex = 6;
             this.lblCustID.Text = "Customer ID:";
             // 
             // txtCustAddress
             // 
-            this.txtCustAddress.Location = new System.Drawing.Point(234, 257);
-            this.txtCustAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCustAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustAddress.Location = new System.Drawing.Point(100, 381);
             this.txtCustAddress.Multiline = true;
             this.txtCustAddress.Name = "txtCustAddress";
-            this.txtCustAddress.Size = new System.Drawing.Size(146, 29);
+            this.txtCustAddress.Size = new System.Drawing.Size(302, 34);
             this.txtCustAddress.TabIndex = 5;
+            this.txtCustAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtCustMName
             // 
-            this.txtCustMName.Location = new System.Drawing.Point(234, 199);
-            this.txtCustMName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCustMName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustMName.Location = new System.Drawing.Point(100, 300);
             this.txtCustMName.Multiline = true;
             this.txtCustMName.Name = "txtCustMName";
-            this.txtCustMName.Size = new System.Drawing.Size(146, 35);
+            this.txtCustMName.Size = new System.Drawing.Size(302, 41);
             this.txtCustMName.TabIndex = 4;
+            this.txtCustMName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtCustFName
             // 
-            this.txtCustFName.Location = new System.Drawing.Point(234, 148);
-            this.txtCustFName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCustFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustFName.Location = new System.Drawing.Point(100, 213);
             this.txtCustFName.Multiline = true;
             this.txtCustFName.Name = "txtCustFName";
-            this.txtCustFName.Size = new System.Drawing.Size(146, 29);
+            this.txtCustFName.Size = new System.Drawing.Size(302, 36);
             this.txtCustFName.TabIndex = 3;
+            this.txtCustFName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtCustLName
             // 
-            this.txtCustLName.Location = new System.Drawing.Point(234, 97);
-            this.txtCustLName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCustLName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustLName.Location = new System.Drawing.Point(100, 136);
             this.txtCustLName.Multiline = true;
             this.txtCustLName.Name = "txtCustLName";
-            this.txtCustLName.Size = new System.Drawing.Size(146, 29);
+            this.txtCustLName.Size = new System.Drawing.Size(302, 35);
             this.txtCustLName.TabIndex = 2;
+            this.txtCustLName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtCustID
             // 
-            this.txtCustID.Location = new System.Drawing.Point(234, 41);
-            this.txtCustID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCustID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustID.Location = new System.Drawing.Point(100, 57);
             this.txtCustID.Multiline = true;
             this.txtCustID.Name = "txtCustID";
-            this.txtCustID.Size = new System.Drawing.Size(146, 32);
+            this.txtCustID.Size = new System.Drawing.Size(302, 40);
             this.txtCustID.TabIndex = 1;
+            this.txtCustID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // dataCustomers
             // 
@@ -307,12 +266,11 @@
             this.custFirstName,
             this.custMiddleName,
             this.custAddress});
-            this.dataCustomers.Location = new System.Drawing.Point(739, 20);
-            this.dataCustomers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataCustomers.Location = new System.Drawing.Point(553, 3);
             this.dataCustomers.Name = "dataCustomers";
             this.dataCustomers.ReadOnly = true;
             this.dataCustomers.RowHeadersWidth = 51;
-            this.dataCustomers.Size = new System.Drawing.Size(920, 436);
+            this.dataCustomers.Size = new System.Drawing.Size(690, 546);
             this.dataCustomers.TabIndex = 0;
             this.dataCustomers.SelectionChanged += new System.EventHandler(this.dataCustomers_SelectionChanged);
             // 
@@ -356,36 +314,12 @@
             this.custAddress.ReadOnly = true;
             this.custAddress.Width = 125;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.btnGymClear);
-            this.tabPage2.Controls.Add(this.btnGymSave);
-            this.tabPage2.Controls.Add(this.btnGymAdd);
-            this.tabPage2.Controls.Add(this.txtGymMFee);
-            this.tabPage2.Controls.Add(this.txtGymInsName);
-            this.tabPage2.Controls.Add(this.txtGymClassName);
-            this.tabPage2.Controls.Add(this.txtGymClassID);
-            this.tabPage2.Controls.Add(this.lblGymMFee);
-            this.tabPage2.Controls.Add(this.lblGymInsName);
-            this.tabPage2.Controls.Add(this.lblGymClassName);
-            this.tabPage2.Controls.Add(this.lblGymClassID);
-            this.tabPage2.Controls.Add(this.dataGymClass);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1720, 647);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Gym Class";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // btnGymClear
             // 
             this.btnGymClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGymClear.Location = new System.Drawing.Point(593, 311);
-            this.btnGymClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGymClear.Location = new System.Drawing.Point(437, 398);
             this.btnGymClear.Name = "btnGymClear";
-            this.btnGymClear.Size = new System.Drawing.Size(121, 45);
+            this.btnGymClear.Size = new System.Drawing.Size(91, 37);
             this.btnGymClear.TabIndex = 11;
             this.btnGymClear.Text = "CLEAR";
             this.btnGymClear.UseVisualStyleBackColor = true;
@@ -394,10 +328,9 @@
             // btnGymSave
             // 
             this.btnGymSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGymSave.Location = new System.Drawing.Point(383, 311);
-            this.btnGymSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGymSave.Location = new System.Drawing.Point(279, 398);
             this.btnGymSave.Name = "btnGymSave";
-            this.btnGymSave.Size = new System.Drawing.Size(121, 45);
+            this.btnGymSave.Size = new System.Drawing.Size(91, 37);
             this.btnGymSave.TabIndex = 10;
             this.btnGymSave.Text = "SAVE";
             this.btnGymSave.UseVisualStyleBackColor = true;
@@ -406,10 +339,9 @@
             // btnGymAdd
             // 
             this.btnGymAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGymAdd.Location = new System.Drawing.Point(170, 311);
-            this.btnGymAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGymAdd.Location = new System.Drawing.Point(120, 398);
             this.btnGymAdd.Name = "btnGymAdd";
-            this.btnGymAdd.Size = new System.Drawing.Size(121, 45);
+            this.btnGymAdd.Size = new System.Drawing.Size(91, 37);
             this.btnGymAdd.TabIndex = 9;
             this.btnGymAdd.Text = "ADD";
             this.btnGymAdd.UseVisualStyleBackColor = true;
@@ -417,52 +349,51 @@
             // 
             // txtGymMFee
             // 
-            this.txtGymMFee.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGymMFee.Location = new System.Drawing.Point(231, 211);
-            this.txtGymMFee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGymMFee.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGymMFee.Location = new System.Drawing.Point(170, 303);
             this.txtGymMFee.Multiline = true;
             this.txtGymMFee.Name = "txtGymMFee";
-            this.txtGymMFee.Size = new System.Drawing.Size(160, 39);
+            this.txtGymMFee.Size = new System.Drawing.Size(331, 32);
             this.txtGymMFee.TabIndex = 8;
+            this.txtGymMFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtGymInsName
             // 
-            this.txtGymInsName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGymInsName.Location = new System.Drawing.Point(231, 161);
-            this.txtGymInsName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGymInsName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGymInsName.Location = new System.Drawing.Point(170, 227);
             this.txtGymInsName.Multiline = true;
             this.txtGymInsName.Name = "txtGymInsName";
-            this.txtGymInsName.Size = new System.Drawing.Size(160, 42);
+            this.txtGymInsName.Size = new System.Drawing.Size(331, 35);
             this.txtGymInsName.TabIndex = 7;
+            this.txtGymInsName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtGymClassName
             // 
-            this.txtGymClassName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGymClassName.Location = new System.Drawing.Point(231, 115);
-            this.txtGymClassName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGymClassName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGymClassName.Location = new System.Drawing.Point(170, 144);
             this.txtGymClassName.Multiline = true;
             this.txtGymClassName.Name = "txtGymClassName";
-            this.txtGymClassName.Size = new System.Drawing.Size(160, 38);
+            this.txtGymClassName.Size = new System.Drawing.Size(331, 32);
             this.txtGymClassName.TabIndex = 6;
+            this.txtGymClassName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtGymClassID
             // 
-            this.txtGymClassID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGymClassID.Location = new System.Drawing.Point(231, 66);
-            this.txtGymClassID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGymClassID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGymClassID.Location = new System.Drawing.Point(170, 70);
             this.txtGymClassID.Multiline = true;
             this.txtGymClassID.Name = "txtGymClassID";
-            this.txtGymClassID.Size = new System.Drawing.Size(160, 42);
+            this.txtGymClassID.Size = new System.Drawing.Size(331, 35);
             this.txtGymClassID.TabIndex = 5;
+            this.txtGymClassID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblGymMFee
             // 
             this.lblGymMFee.AutoSize = true;
             this.lblGymMFee.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGymMFee.Location = new System.Drawing.Point(8, 203);
-            this.lblGymMFee.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGymMFee.Location = new System.Drawing.Point(270, 276);
             this.lblGymMFee.Name = "lblGymMFee";
-            this.lblGymMFee.Size = new System.Drawing.Size(163, 29);
+            this.lblGymMFee.Size = new System.Drawing.Size(132, 24);
             this.lblGymMFee.TabIndex = 4;
             this.lblGymMFee.Text = "Monthly Fee:";
             // 
@@ -470,10 +401,9 @@
             // 
             this.lblGymInsName.AutoSize = true;
             this.lblGymInsName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGymInsName.Location = new System.Drawing.Point(4, 158);
-            this.lblGymInsName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGymInsName.Location = new System.Drawing.Point(253, 191);
             this.lblGymInsName.Name = "lblGymInsName";
-            this.lblGymInsName.Size = new System.Drawing.Size(204, 29);
+            this.lblGymInsName.Size = new System.Drawing.Size(163, 24);
             this.lblGymInsName.TabIndex = 3;
             this.lblGymInsName.Text = "Instructor Name:";
             // 
@@ -481,10 +411,9 @@
             // 
             this.lblGymClassName.AutoSize = true;
             this.lblGymClassName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGymClassName.Location = new System.Drawing.Point(4, 118);
-            this.lblGymClassName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGymClassName.Location = new System.Drawing.Point(275, 117);
             this.lblGymClassName.Name = "lblGymClassName";
-            this.lblGymClassName.Size = new System.Drawing.Size(161, 29);
+            this.lblGymClassName.Size = new System.Drawing.Size(127, 24);
             this.lblGymClassName.TabIndex = 2;
             this.lblGymClassName.Text = "Class Name:";
             // 
@@ -492,10 +421,9 @@
             // 
             this.lblGymClassID.AutoSize = true;
             this.lblGymClassID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGymClassID.Location = new System.Drawing.Point(8, 79);
-            this.lblGymClassID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGymClassID.Location = new System.Drawing.Point(294, 43);
             this.lblGymClassID.Name = "lblGymClassID";
-            this.lblGymClassID.Size = new System.Drawing.Size(117, 29);
+            this.lblGymClassID.Size = new System.Drawing.Size(91, 24);
             this.lblGymClassID.TabIndex = 1;
             this.lblGymClassID.Text = "Class ID:";
             // 
@@ -509,12 +437,11 @@
             this.className,
             this.instructorName,
             this.monthlyFee});
-            this.dataGymClass.Location = new System.Drawing.Point(960, 7);
-            this.dataGymClass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGymClass.Location = new System.Drawing.Point(667, 13);
             this.dataGymClass.Name = "dataGymClass";
             this.dataGymClass.ReadOnly = true;
             this.dataGymClass.RowHeadersWidth = 51;
-            this.dataGymClass.Size = new System.Drawing.Size(715, 416);
+            this.dataGymClass.Size = new System.Drawing.Size(617, 462);
             this.dataGymClass.TabIndex = 0;
             this.dataGymClass.SelectionChanged += new System.EventHandler(this.dataGridGymClass_SelectionChanged);
             // 
@@ -550,40 +477,13 @@
             this.monthlyFee.ReadOnly = true;
             this.monthlyFee.Width = 125;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.lblEnrollCustName);
-            this.tabPage3.Controls.Add(this.lblEnrollClassName);
-            this.tabPage3.Controls.Add(this.dataEnroll);
-            this.tabPage3.Controls.Add(this.txtEnrollClassName);
-            this.tabPage3.Controls.Add(this.txtEnrollCustName);
-            this.tabPage3.Controls.Add(this.dataEnrollCust);
-            this.tabPage3.Controls.Add(this.dataEnrollGym);
-            this.tabPage3.Controls.Add(this.btnEnroll);
-            this.tabPage3.Controls.Add(this.txtEnrollCustID);
-            this.tabPage3.Controls.Add(this.lblEnrollCust);
-            this.tabPage3.Controls.Add(this.label2);
-            this.tabPage3.Controls.Add(this.lblEnrollClass);
-            this.tabPage3.Controls.Add(this.txtEnrollLength);
-            this.tabPage3.Controls.Add(this.txtEnrollClassID);
-            this.tabPage3.Controls.Add(this.btnEnrollCancel);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage3.Size = new System.Drawing.Size(1720, 647);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Cutomer Enrollment";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
             // lblEnrollCustName
             // 
             this.lblEnrollCustName.AutoSize = true;
             this.lblEnrollCustName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnrollCustName.Location = new System.Drawing.Point(13, 39);
-            this.lblEnrollCustName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEnrollCustName.Location = new System.Drawing.Point(84, 99);
             this.lblEnrollCustName.Name = "lblEnrollCustName";
-            this.lblEnrollCustName.Size = new System.Drawing.Size(144, 29);
+            this.lblEnrollCustName.Size = new System.Drawing.Size(114, 24);
             this.lblEnrollCustName.TabIndex = 17;
             this.lblEnrollCustName.Text = "Last Name:";
             // 
@@ -591,10 +491,9 @@
             // 
             this.lblEnrollClassName.AutoSize = true;
             this.lblEnrollClassName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnrollClassName.Location = new System.Drawing.Point(13, 128);
-            this.lblEnrollClassName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEnrollClassName.Location = new System.Drawing.Point(60, 267);
             this.lblEnrollClassName.Name = "lblEnrollClassName";
-            this.lblEnrollClassName.Size = new System.Drawing.Size(161, 29);
+            this.lblEnrollClassName.Size = new System.Drawing.Size(127, 24);
             this.lblEnrollClassName.TabIndex = 16;
             this.lblEnrollClassName.Text = "Class Name:";
             // 
@@ -609,34 +508,73 @@
             this.classID2,
             this.lengthEnrollment,
             this.enrollmentDateTime});
-            this.dataEnroll.Location = new System.Drawing.Point(792, 464);
-            this.dataEnroll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataEnroll.Location = new System.Drawing.Point(448, 353);
             this.dataEnroll.Name = "dataEnroll";
             this.dataEnroll.ReadOnly = true;
             this.dataEnroll.RowHeadersWidth = 51;
-            this.dataEnroll.Size = new System.Drawing.Size(889, 178);
+            this.dataEnroll.Size = new System.Drawing.Size(829, 185);
             this.dataEnroll.TabIndex = 15;
             this.dataEnroll.SelectionChanged += new System.EventHandler(this.dataEnroll_SelectionChanged);
             // 
+            // enrollmentID
+            // 
+            this.enrollmentID.HeaderText = "Enrollment ID";
+            this.enrollmentID.MinimumWidth = 6;
+            this.enrollmentID.Name = "enrollmentID";
+            this.enrollmentID.ReadOnly = true;
+            this.enrollmentID.Width = 125;
+            // 
+            // custID2
+            // 
+            this.custID2.HeaderText = "Customer Last Name";
+            this.custID2.MinimumWidth = 6;
+            this.custID2.Name = "custID2";
+            this.custID2.ReadOnly = true;
+            this.custID2.Width = 140;
+            // 
+            // classID2
+            // 
+            this.classID2.HeaderText = "Class Name";
+            this.classID2.MinimumWidth = 6;
+            this.classID2.Name = "classID2";
+            this.classID2.ReadOnly = true;
+            this.classID2.Width = 125;
+            // 
+            // lengthEnrollment
+            // 
+            this.lengthEnrollment.HeaderText = "Length of Enrollment (in months)";
+            this.lengthEnrollment.MinimumWidth = 6;
+            this.lengthEnrollment.Name = "lengthEnrollment";
+            this.lengthEnrollment.ReadOnly = true;
+            this.lengthEnrollment.Width = 190;
+            // 
+            // enrollmentDateTime
+            // 
+            this.enrollmentDateTime.HeaderText = "Enrollment Date & Time";
+            this.enrollmentDateTime.MinimumWidth = 6;
+            this.enrollmentDateTime.Name = "enrollmentDateTime";
+            this.enrollmentDateTime.ReadOnly = true;
+            this.enrollmentDateTime.Width = 160;
+            // 
             // txtEnrollClassName
             // 
-            this.txtEnrollClassName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEnrollClassName.Location = new System.Drawing.Point(204, 135);
-            this.txtEnrollClassName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEnrollClassName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEnrollClassName.Location = new System.Drawing.Point(17, 294);
             this.txtEnrollClassName.Multiline = true;
             this.txtEnrollClassName.Name = "txtEnrollClassName";
-            this.txtEnrollClassName.Size = new System.Drawing.Size(161, 29);
+            this.txtEnrollClassName.Size = new System.Drawing.Size(226, 37);
             this.txtEnrollClassName.TabIndex = 14;
+            this.txtEnrollClassName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtEnrollCustName
             // 
-            this.txtEnrollCustName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEnrollCustName.Location = new System.Drawing.Point(204, 46);
-            this.txtEnrollCustName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEnrollCustName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEnrollCustName.Location = new System.Drawing.Point(17, 126);
             this.txtEnrollCustName.Multiline = true;
             this.txtEnrollCustName.Name = "txtEnrollCustName";
-            this.txtEnrollCustName.Size = new System.Drawing.Size(161, 29);
+            this.txtEnrollCustName.Size = new System.Drawing.Size(226, 37);
             this.txtEnrollCustName.TabIndex = 13;
+            this.txtEnrollCustName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // dataEnrollCust
             // 
@@ -649,12 +587,11 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9});
-            this.dataEnrollCust.Location = new System.Drawing.Point(876, 30);
-            this.dataEnrollCust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataEnrollCust.Location = new System.Drawing.Point(673, 0);
             this.dataEnrollCust.Name = "dataEnrollCust";
             this.dataEnrollCust.ReadOnly = true;
             this.dataEnrollCust.RowHeadersWidth = 51;
-            this.dataEnrollCust.Size = new System.Drawing.Size(805, 235);
+            this.dataEnrollCust.Size = new System.Drawing.Size(604, 191);
             this.dataEnrollCust.TabIndex = 12;
             this.dataEnrollCust.SelectionChanged += new System.EventHandler(this.dataEnrollCust_SelectionChanged);
             // 
@@ -708,12 +645,11 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            this.dataEnrollGym.Location = new System.Drawing.Point(876, 272);
-            this.dataEnrollGym.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataEnrollGym.Location = new System.Drawing.Point(673, 197);
             this.dataEnrollGym.Name = "dataEnrollGym";
             this.dataEnrollGym.ReadOnly = true;
             this.dataEnrollGym.RowHeadersWidth = 51;
-            this.dataEnrollGym.Size = new System.Drawing.Size(805, 185);
+            this.dataEnrollGym.Size = new System.Drawing.Size(604, 150);
             this.dataEnrollGym.TabIndex = 11;
             this.dataEnrollGym.SelectionChanged += new System.EventHandler(this.dataEnrollGym_SelectionChanged);
             // 
@@ -752,10 +688,9 @@
             // btnEnroll
             // 
             this.btnEnroll.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnroll.Location = new System.Drawing.Point(165, 286);
-            this.btnEnroll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEnroll.Location = new System.Drawing.Point(87, 457);
             this.btnEnroll.Name = "btnEnroll";
-            this.btnEnroll.Size = new System.Drawing.Size(148, 41);
+            this.btnEnroll.Size = new System.Drawing.Size(111, 33);
             this.btnEnroll.TabIndex = 10;
             this.btnEnroll.Text = "ENROLL";
             this.btnEnroll.UseVisualStyleBackColor = true;
@@ -763,22 +698,21 @@
             // 
             // txtEnrollCustID
             // 
-            this.txtEnrollCustID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEnrollCustID.Location = new System.Drawing.Point(204, 4);
-            this.txtEnrollCustID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEnrollCustID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEnrollCustID.Location = new System.Drawing.Point(17, 44);
             this.txtEnrollCustID.Multiline = true;
             this.txtEnrollCustID.Name = "txtEnrollCustID";
-            this.txtEnrollCustID.Size = new System.Drawing.Size(161, 36);
+            this.txtEnrollCustID.Size = new System.Drawing.Size(226, 37);
             this.txtEnrollCustID.TabIndex = 9;
+            this.txtEnrollCustID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblEnrollCust
             // 
             this.lblEnrollCust.AutoSize = true;
             this.lblEnrollCust.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnrollCust.Location = new System.Drawing.Point(9, 7);
-            this.lblEnrollCust.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEnrollCust.Location = new System.Drawing.Point(68, 17);
             this.lblEnrollCust.Name = "lblEnrollCust";
-            this.lblEnrollCust.Size = new System.Drawing.Size(164, 29);
+            this.lblEnrollCust.Size = new System.Drawing.Size(130, 24);
             this.lblEnrollCust.TabIndex = 8;
             this.lblEnrollCust.Text = "Customer ID:";
             // 
@@ -786,10 +720,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 187);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(39, 356);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(232, 29);
+            this.label2.Size = new System.Drawing.Size(187, 24);
             this.label2.TabIndex = 7;
             this.label2.Text = "Enrollment Length:";
             // 
@@ -797,80 +730,70 @@
             // 
             this.lblEnrollClass.AutoSize = true;
             this.lblEnrollClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnrollClass.Location = new System.Drawing.Point(13, 95);
-            this.lblEnrollClass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEnrollClass.Location = new System.Drawing.Point(84, 177);
             this.lblEnrollClass.Name = "lblEnrollClass";
-            this.lblEnrollClass.Size = new System.Drawing.Size(117, 29);
+            this.lblEnrollClass.Size = new System.Drawing.Size(91, 24);
             this.lblEnrollClass.TabIndex = 6;
             this.lblEnrollClass.Text = "Class ID:";
             // 
             // txtEnrollLength
             // 
-            this.txtEnrollLength.Location = new System.Drawing.Point(302, 187);
-            this.txtEnrollLength.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEnrollLength.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEnrollLength.Location = new System.Drawing.Point(17, 383);
             this.txtEnrollLength.Multiline = true;
             this.txtEnrollLength.Name = "txtEnrollLength";
-            this.txtEnrollLength.Size = new System.Drawing.Size(161, 29);
+            this.txtEnrollLength.Size = new System.Drawing.Size(226, 37);
             this.txtEnrollLength.TabIndex = 5;
+            this.txtEnrollLength.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtEnrollClassID
             // 
-            this.txtEnrollClassID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEnrollClassID.Location = new System.Drawing.Point(204, 95);
-            this.txtEnrollClassID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEnrollClassID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEnrollClassID.Location = new System.Drawing.Point(17, 204);
             this.txtEnrollClassID.Multiline = true;
             this.txtEnrollClassID.Name = "txtEnrollClassID";
-            this.txtEnrollClassID.Size = new System.Drawing.Size(161, 29);
+            this.txtEnrollClassID.Size = new System.Drawing.Size(226, 37);
             this.txtEnrollClassID.TabIndex = 4;
+            this.txtEnrollClassID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnEnrollCancel
             // 
             this.btnEnrollCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnrollCancel.Location = new System.Drawing.Point(333, 286);
-            this.btnEnrollCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEnrollCancel.Location = new System.Drawing.Point(213, 457);
             this.btnEnrollCancel.Name = "btnEnrollCancel";
-            this.btnEnrollCancel.Size = new System.Drawing.Size(148, 42);
+            this.btnEnrollCancel.Size = new System.Drawing.Size(111, 34);
             this.btnEnrollCancel.TabIndex = 1;
             this.btnEnrollCancel.Text = "CANCEL";
             this.btnEnrollCancel.UseVisualStyleBackColor = true;
             this.btnEnrollCancel.Click += new System.EventHandler(this.btnEnrollCancel_Click);
             // 
-            // tabPage4
+            // txtClassCustID
             // 
-            this.tabPage4.Controls.Add(this.txtClassCustID);
-            this.tabPage4.Controls.Add(this.lblCustName);
-            this.tabPage4.Controls.Add(this.btnClearClass);
-            this.tabPage4.Controls.Add(this.btnShowClass);
-            this.tabPage4.Controls.Add(this.txtCustNameInfo);
-            this.tabPage4.Controls.Add(this.dataCLassInfo);
-            this.tabPage4.Controls.Add(this.dataCustInfo);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage4.Size = new System.Drawing.Size(1720, 647);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Classes Information";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.txtClassCustID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClassCustID.Location = new System.Drawing.Point(185, 134);
+            this.txtClassCustID.Multiline = true;
+            this.txtClassCustID.Name = "txtClassCustID";
+            this.txtClassCustID.Size = new System.Drawing.Size(111, 32);
+            this.txtClassCustID.TabIndex = 8;
+            this.txtClassCustID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtClassCustID.Visible = false;
             // 
             // lblCustName
             // 
             this.lblCustName.AutoSize = true;
             this.lblCustName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustName.Location = new System.Drawing.Point(8, 159);
-            this.lblCustName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCustName.Location = new System.Drawing.Point(52, 138);
             this.lblCustName.Name = "lblCustName";
-            this.lblCustName.Size = new System.Drawing.Size(161, 29);
+            this.lblCustName.Size = new System.Drawing.Size(127, 24);
             this.lblCustName.TabIndex = 7;
             this.lblCustName.Text = "Class Name:";
             // 
             // btnClearClass
             // 
             this.btnClearClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearClass.Location = new System.Drawing.Point(191, 326);
-            this.btnClearClass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClearClass.Location = new System.Drawing.Point(145, 309);
             this.btnClearClass.Name = "btnClearClass";
-            this.btnClearClass.Size = new System.Drawing.Size(147, 43);
+            this.btnClearClass.Size = new System.Drawing.Size(110, 35);
             this.btnClearClass.TabIndex = 5;
             this.btnClearClass.Text = "CLEAR";
             this.btnClearClass.UseVisualStyleBackColor = true;
@@ -879,10 +802,9 @@
             // btnShowClass
             // 
             this.btnShowClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowClass.Location = new System.Drawing.Point(55, 326);
-            this.btnShowClass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnShowClass.Location = new System.Drawing.Point(20, 309);
             this.btnShowClass.Name = "btnShowClass";
-            this.btnShowClass.Size = new System.Drawing.Size(147, 43);
+            this.btnShowClass.Size = new System.Drawing.Size(110, 35);
             this.btnShowClass.TabIndex = 4;
             this.btnShowClass.Text = "SHOW";
             this.btnShowClass.UseVisualStyleBackColor = true;
@@ -890,36 +812,13 @@
             // 
             // txtCustNameInfo
             // 
-            this.txtCustNameInfo.Location = new System.Drawing.Point(191, 159);
-            this.txtCustNameInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCustNameInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustNameInfo.Location = new System.Drawing.Point(56, 165);
             this.txtCustNameInfo.Multiline = true;
             this.txtCustNameInfo.Name = "txtCustNameInfo";
-            this.txtCustNameInfo.Size = new System.Drawing.Size(147, 36);
+            this.txtCustNameInfo.Size = new System.Drawing.Size(111, 30);
             this.txtCustNameInfo.TabIndex = 3;
-            // 
-            // dataCLassInfo
-            // 
-            this.dataCLassInfo.AllowUserToAddRows = false;
-            this.dataCLassInfo.AllowUserToDeleteRows = false;
-            this.dataCLassInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataCLassInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn10});
-            this.dataCLassInfo.Location = new System.Drawing.Point(1247, 106);
-            this.dataCLassInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataCLassInfo.Name = "dataCLassInfo";
-            this.dataCLassInfo.ReadOnly = true;
-            this.dataCLassInfo.RowHeadersWidth = 51;
-            this.dataCLassInfo.Size = new System.Drawing.Size(451, 491);
-            this.dataCLassInfo.TabIndex = 2;
-            this.dataCLassInfo.SelectionChanged += new System.EventHandler(this.dataCLassInfo_SelectionChanged);
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.HeaderText = "Class Name";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            this.dataGridViewTextBoxColumn10.Width = 125;
+            this.txtCustNameInfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // dataCustInfo
             // 
@@ -929,25 +828,13 @@
             this.dataCustInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CustID23,
             this.CustomerName});
-            this.dataCustInfo.Location = new System.Drawing.Point(371, 106);
-            this.dataCustInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataCustInfo.Location = new System.Drawing.Point(315, 55);
             this.dataCustInfo.Name = "dataCustInfo";
             this.dataCustInfo.ReadOnly = true;
             this.dataCustInfo.RowHeadersWidth = 51;
-            this.dataCustInfo.Size = new System.Drawing.Size(735, 491);
+            this.dataCustInfo.Size = new System.Drawing.Size(374, 399);
             this.dataCustInfo.TabIndex = 1;
             this.dataCustInfo.SelectionChanged += new System.EventHandler(this.dataCustInfo_SelectionChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 16);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(415, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "GYM MANAGEMENT SYSTEM";
             // 
             // CustID23
             // 
@@ -965,93 +852,187 @@
             this.CustomerName.ReadOnly = true;
             this.CustomerName.Width = 140;
             // 
-            // txtClassCustID
+            // label1
             // 
-            this.txtClassCustID.Location = new System.Drawing.Point(191, 113);
-            this.txtClassCustID.Margin = new System.Windows.Forms.Padding(4);
-            this.txtClassCustID.Multiline = true;
-            this.txtClassCustID.Name = "txtClassCustID";
-            this.txtClassCustID.Size = new System.Drawing.Size(147, 38);
-            this.txtClassCustID.TabIndex = 8;
-            this.txtClassCustID.Visible = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(7, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(333, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "GYM MANAGEMENT SYSTEM";
             // 
-            // enrollmentID
+            // tab
             // 
-            this.enrollmentID.HeaderText = "Enrollment ID";
-            this.enrollmentID.MinimumWidth = 6;
-            this.enrollmentID.Name = "enrollmentID";
-            this.enrollmentID.ReadOnly = true;
-            this.enrollmentID.Width = 125;
+            this.tab.Controls.Add(this.metroTabPage1);
+            this.tab.Controls.Add(this.metroTabPage2);
+            this.tab.Controls.Add(this.metroTabPage3);
+            this.tab.Controls.Add(this.metroTabPage4);
+            this.tab.Location = new System.Drawing.Point(12, 11);
+            this.tab.Name = "tab";
+            this.tab.SelectedIndex = 0;
+            this.tab.Size = new System.Drawing.Size(1315, 609);
+            this.tab.TabIndex = 2;
+            this.tab.UseSelectable = true;
             // 
-            // custID2
+            // metroTabPage1
             // 
-            this.custID2.HeaderText = "Customer ID";
-            this.custID2.MinimumWidth = 6;
-            this.custID2.Name = "custID2";
-            this.custID2.ReadOnly = true;
-            this.custID2.Width = 125;
+            this.metroTabPage1.Controls.Add(this.btnCustClear);
+            this.metroTabPage1.Controls.Add(this.btnCustSave);
+            this.metroTabPage1.Controls.Add(this.btnCustAdd);
+            this.metroTabPage1.Controls.Add(this.txtCustID);
+            this.metroTabPage1.Controls.Add(this.lblCustAddress);
+            this.metroTabPage1.Controls.Add(this.dataCustomers);
+            this.metroTabPage1.Controls.Add(this.lblCustMname);
+            this.metroTabPage1.Controls.Add(this.txtCustLName);
+            this.metroTabPage1.Controls.Add(this.lblCustFname);
+            this.metroTabPage1.Controls.Add(this.txtCustFName);
+            this.metroTabPage1.Controls.Add(this.lblCustLname);
+            this.metroTabPage1.Controls.Add(this.txtCustMName);
+            this.metroTabPage1.Controls.Add(this.lblCustID);
+            this.metroTabPage1.Controls.Add(this.txtCustAddress);
+            this.metroTabPage1.HorizontalScrollbarBarColor = true;
+            this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage1.HorizontalScrollbarSize = 10;
+            this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage1.Name = "metroTabPage1";
+            this.metroTabPage1.Size = new System.Drawing.Size(1307, 567);
+            this.metroTabPage1.TabIndex = 0;
+            this.metroTabPage1.Text = "Customer";
+            this.metroTabPage1.VerticalScrollbarBarColor = true;
+            this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage1.VerticalScrollbarSize = 10;
             // 
-            // classID2
+            // metroTabPage2
             // 
-            this.classID2.HeaderText = "Class ID";
-            this.classID2.MinimumWidth = 6;
-            this.classID2.Name = "classID2";
-            this.classID2.ReadOnly = true;
-            this.classID2.Width = 125;
+            this.metroTabPage2.Controls.Add(this.btnGymClear);
+            this.metroTabPage2.Controls.Add(this.btnGymSave);
+            this.metroTabPage2.Controls.Add(this.btnGymAdd);
+            this.metroTabPage2.Controls.Add(this.txtGymMFee);
+            this.metroTabPage2.Controls.Add(this.lblGymClassID);
+            this.metroTabPage2.Controls.Add(this.txtGymInsName);
+            this.metroTabPage2.Controls.Add(this.dataGymClass);
+            this.metroTabPage2.Controls.Add(this.txtGymClassName);
+            this.metroTabPage2.Controls.Add(this.lblGymClassName);
+            this.metroTabPage2.Controls.Add(this.txtGymClassID);
+            this.metroTabPage2.Controls.Add(this.lblGymInsName);
+            this.metroTabPage2.Controls.Add(this.lblGymMFee);
+            this.metroTabPage2.HorizontalScrollbarBarColor = true;
+            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.HorizontalScrollbarSize = 10;
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage2.Name = "metroTabPage2";
+            this.metroTabPage2.Size = new System.Drawing.Size(1307, 567);
+            this.metroTabPage2.TabIndex = 1;
+            this.metroTabPage2.Text = "Gym Class";
+            this.metroTabPage2.VerticalScrollbarBarColor = true;
+            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.VerticalScrollbarSize = 10;
             // 
-            // lengthEnrollment
+            // metroTabPage3
             // 
-            this.lengthEnrollment.HeaderText = "Length of Enrollment (in months)";
-            this.lengthEnrollment.MinimumWidth = 6;
-            this.lengthEnrollment.Name = "lengthEnrollment";
-            this.lengthEnrollment.ReadOnly = true;
-            this.lengthEnrollment.Width = 150;
+            this.metroTabPage3.Controls.Add(this.dataEnroll);
+            this.metroTabPage3.Controls.Add(this.lblEnrollCustName);
+            this.metroTabPage3.Controls.Add(this.dataEnrollCust);
+            this.metroTabPage3.Controls.Add(this.dataEnrollGym);
+            this.metroTabPage3.Controls.Add(this.lblEnrollClassName);
+            this.metroTabPage3.Controls.Add(this.txtEnrollClassName);
+            this.metroTabPage3.Controls.Add(this.txtEnrollClassID);
+            this.metroTabPage3.Controls.Add(this.txtEnrollCustName);
+            this.metroTabPage3.Controls.Add(this.btnEnrollCancel);
+            this.metroTabPage3.Controls.Add(this.txtEnrollLength);
+            this.metroTabPage3.Controls.Add(this.lblEnrollClass);
+            this.metroTabPage3.Controls.Add(this.btnEnroll);
+            this.metroTabPage3.Controls.Add(this.label2);
+            this.metroTabPage3.Controls.Add(this.txtEnrollCustID);
+            this.metroTabPage3.Controls.Add(this.lblEnrollCust);
+            this.metroTabPage3.HorizontalScrollbarBarColor = true;
+            this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.HorizontalScrollbarSize = 10;
+            this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage3.Name = "metroTabPage3";
+            this.metroTabPage3.Size = new System.Drawing.Size(1307, 567);
+            this.metroTabPage3.TabIndex = 2;
+            this.metroTabPage3.Text = "Enrollment";
+            this.metroTabPage3.VerticalScrollbarBarColor = true;
+            this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.VerticalScrollbarSize = 10;
             // 
-            // enrollmentDateTime
+            // metroTabPage4
             // 
-            this.enrollmentDateTime.HeaderText = "Enrollment Date & Time";
-            this.enrollmentDateTime.MinimumWidth = 6;
-            this.enrollmentDateTime.Name = "enrollmentDateTime";
-            this.enrollmentDateTime.ReadOnly = true;
-            this.enrollmentDateTime.Width = 150;
+            this.metroTabPage4.Controls.Add(this.dataCLassInfo);
+            this.metroTabPage4.Controls.Add(this.txtClassCustID);
+            this.metroTabPage4.Controls.Add(this.lblCustName);
+            this.metroTabPage4.Controls.Add(this.btnClearClass);
+            this.metroTabPage4.Controls.Add(this.btnShowClass);
+            this.metroTabPage4.Controls.Add(this.txtCustNameInfo);
+            this.metroTabPage4.Controls.Add(this.dataCustInfo);
+            this.metroTabPage4.HorizontalScrollbarBarColor = true;
+            this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage4.HorizontalScrollbarSize = 10;
+            this.metroTabPage4.Location = new System.Drawing.Point(4, 38);
+            this.metroTabPage4.Name = "metroTabPage4";
+            this.metroTabPage4.Size = new System.Drawing.Size(1307, 567);
+            this.metroTabPage4.TabIndex = 3;
+            this.metroTabPage4.Text = "Classes Information";
+            this.metroTabPage4.VerticalScrollbarBarColor = true;
+            this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage4.VerticalScrollbarSize = 10;
+            // 
+            // dataCLassInfo
+            // 
+            this.dataCLassInfo.AllowUserToAddRows = false;
+            this.dataCLassInfo.AllowUserToDeleteRows = false;
+            this.dataCLassInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataCLassInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn10});
+            this.dataCLassInfo.Location = new System.Drawing.Point(878, 55);
+            this.dataCLassInfo.Name = "dataCLassInfo";
+            this.dataCLassInfo.ReadOnly = true;
+            this.dataCLassInfo.RowHeadersWidth = 51;
+            this.dataCLassInfo.Size = new System.Drawing.Size(211, 399);
+            this.dataCLassInfo.TabIndex = 2;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.HeaderText = "Class Name";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Width = 125;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1785, 778);
+            this.ClientSize = new System.Drawing.Size(1339, 632);
+            this.Controls.Add(this.tab);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCustomers)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGymClass)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataEnroll)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataEnrollCust)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataEnrollGym)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataCLassInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataCustInfo)).EndInit();
+            this.tab.ResumeLayout(false);
+            this.metroTabPage1.ResumeLayout(false);
+            this.metroTabPage1.PerformLayout();
+            this.metroTabPage2.ResumeLayout(false);
+            this.metroTabPage2.PerformLayout();
+            this.metroTabPage3.ResumeLayout(false);
+            this.metroTabPage3.PerformLayout();
+            this.metroTabPage4.ResumeLayout(false);
+            this.metroTabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCLassInfo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView dataCustomers;
         private System.Windows.Forms.DataGridView dataGymClass;
         private System.Windows.Forms.DataGridViewTextBoxColumn custID;
@@ -1081,7 +1062,6 @@
         private System.Windows.Forms.Label lblGymInsName;
         private System.Windows.Forms.Label lblGymClassName;
         private System.Windows.Forms.Label lblGymClassID;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btnEnrollCancel;
         private System.Windows.Forms.Button btnCustAdd;
         private System.Windows.Forms.Button btnGymAdd;
@@ -1109,14 +1089,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.TextBox txtEnrollCustName;
         private System.Windows.Forms.TextBox txtEnrollClassName;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.DataGridView dataCLassInfo;
         private System.Windows.Forms.DataGridView dataCustInfo;
         private System.Windows.Forms.DataGridView dataEnroll;
         private System.Windows.Forms.Label lblEnrollCustName;
         private System.Windows.Forms.Label lblEnrollClassName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.Button btnClearClass;
         private System.Windows.Forms.Button btnShowClass;
         private System.Windows.Forms.TextBox txtCustNameInfo;
@@ -1124,6 +1101,13 @@
         private System.Windows.Forms.TextBox txtClassCustID;
         private System.Windows.Forms.DataGridViewTextBoxColumn CustID23;
         private System.Windows.Forms.DataGridViewTextBoxColumn CustomerName;
+        private MetroFramework.Controls.MetroTabControl tab;
+        private MetroFramework.Controls.MetroTabPage metroTabPage1;
+        private MetroFramework.Controls.MetroTabPage metroTabPage2;
+        private MetroFramework.Controls.MetroTabPage metroTabPage3;
+        private MetroFramework.Controls.MetroTabPage metroTabPage4;
+        private System.Windows.Forms.DataGridView dataCLassInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn enrollmentID;
         private System.Windows.Forms.DataGridViewTextBoxColumn custID2;
         private System.Windows.Forms.DataGridViewTextBoxColumn classID2;
