@@ -13,6 +13,14 @@ Welcome to the C# Exams repository! This repository is dedicated to storing reso
 - Final Exam - .NET Windows Forms:
   Includes resources for the final exam, where we developed a .NET Windows Forms application. This exam emphasized using a library that implements polymorphism for various calculations. The library was referenced and utilized within the Windows Forms application to perform the necessary calculations.
 
+
+### SQL .bak Recovery
+1. Log in to SQL Management Studio.
+2. Right-click on the database you want to recover and select "Recover".
+3. Choose the backup file and add it to the recovery list.
+4. Modify the destination database name if necessary.
+5. Review the recovery settings and click "OK" to initiate the recovery process.
+
 ### Contribution Guidelines
 
 Contributions to this repository are greatly appreciated. If you'd like to contribute, please adhere to the following guidelines:
