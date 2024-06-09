@@ -31,4 +31,4 @@ Contributions to this repository are greatly appreciated. If you'd like to contr
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/bananaNuggets75/console-game.git
+git clone https://github.com/bananaNuggets75/Console-exam.git
